@@ -3,7 +3,6 @@
     "name": "\u74f7\u5668",
     "domain": "https://hdchina.org/",
     "encoding": "UTF-8",
-    "render": true,
     "public": false,
     "search": {
         "paths": [

@@ -14,7 +14,7 @@
         ],
         "params": {
             "search": "{keyword}",
-            "search_area": 0
+            "search_area": 1
         },
         "batch": {
             "delimiter": " ",
@@ -28,7 +28,7 @@
     "browse": {},
     "torrents": {
         "list": {
-            "selector": "div.torrents-table > div:nth-child(2) > div:nth-child(4) > div"
+            "selector": "div.torrent-table-sub-info"
         },
         "fields": {
             "id": {
@@ -45,7 +45,7 @@
                 ]
             },
             "category": {
-                "selector": "a[href*=\"?cat=\"]",
+                "selector": "a[href*=\"?cat[]=\"]",
                 "attribute": "href",
                 "filters": [
                     {
@@ -74,20 +74,20 @@
                 "attribute": "href"
             },
             "size": {
-                "selector": "div.torrent-info > div.torrent-info-text:nth-child(1)"
+                "selector": "div.torrent-info-text-size"
             },
             "seeders": {
-                "selector": "div.torrent-info-text > a[href*=\"#seeders\"]"
+                "selector": "div.torrent-info-text-seeders > a[href*=\"#seeders\"]"
             },
             "leechers": {
-                "selector": "div.torrent-info-text > a[href*=\"#leechers\"]"
+                "selector": "div.torrent-info-text-leechers > a[href*=\"#leechers\"]"
             },
             "date_elapsed": {
-                "selector": "div.torrent-info > div.torrent-info-text:nth-child(2) > span",
+                "selector": "div.torrent-info-text-added > span",
                 "optional": true
             },
             "date_added": {
-                "selector": "div.torrent-info > div.torrent-info-text:nth-child(2) > span",
+                "selector": "div.torrent-info-text-added > span",
                 "attribute": "title",
                 "optional": true
             },
@@ -119,7 +119,7 @@
                 }
             },
             "description": {
-                "selector": "div.torrent-title > div > div:nth-child(2) > div"
+                "selector": "div.torrent-info-text-small_name"
             },
             "labels": {
                 "selector": "div > span.tag"

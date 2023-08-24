@@ -1,6 +1,7 @@
 {
     "id": "feitianlamian",
     "name": "\u98de\u5929\u62c9\u9762",
+    "builtin": true,
     "domain": "https://fsm.name/",
     "search": {
         "paths": [
@@ -21,6 +22,8 @@
         "delimiter": " ",
         "space_replace": "_"
     },
+    "parser": null,
+    "render": null,
     "browse": {},
     "torrents": {
         "list": {
@@ -137,5 +140,14 @@
                 "text": 90000
             }
         }
-    }
+    },
+    "price": {
+        "FREE": [
+            "//span[@class='badge bg-primary']"
+        ],
+        "2XFREE": [],
+        "HR": [],
+        "PEER_COUNT": []
+    },
+    "system_type": ""
 }

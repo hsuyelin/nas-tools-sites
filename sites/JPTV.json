@@ -82,7 +82,7 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//span/i[@class='fas fa-star text-gold']"
         ],
@@ -91,6 +91,5 @@
         "PEER_COUNT": [
             "//span[@class='badge-extra text-green']"
         ]
-    },
-    "system_type": ""
+    }
 }

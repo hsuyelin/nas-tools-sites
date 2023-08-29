@@ -86,7 +86,7 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//span[@class='badge-extra'][contains(@data-original-title,'Free')]"
         ],
@@ -95,6 +95,5 @@
         "PEER_COUNT": [
             "//a[@class='badge-extra text-green'][contains(@data-original-title,'\u505a\u79cd')]"
         ]
-    },
-    "system_type": ""
+    }
 }

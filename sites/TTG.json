@@ -263,7 +263,7 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//img[@class='topic'][contains(@src,'ico_free.gif')]"
         ],
@@ -274,6 +274,5 @@
         "PEER_COUNT": [
             "//span[@id='dlstatus']"
         ]
-    },
-    "system_type": ""
+    }
 }

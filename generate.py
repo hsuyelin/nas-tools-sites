@@ -1,7 +1,52 @@
 import os
 import json
+from datetime import datetime
 import base64
-from urllib.parse import urlparse
+
+# 遍历文件夹，将json文件转为字典
+def process_json_files(folder_path):
+    indexers = []
+    confs = {}
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".json"):
+            filepath = os.path.join(folder_path, filename)
+            try:
+                with open(filepath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    if isinstance(data, dict):
+                        indexer_data = {k: v for k, v in data.items() if k != "conf"}
+                        indexers.append(indexer_data)
+                        if "conf" in data:
+                            domain = data["domain"].split("//")[-1].split("/")[0]
+                            confs[domain] = data["conf"]
+                    else:
+                        print(f"Error: {filename} cannot be converted to a dictionary.")
+            except Exception as e:
+                print(f"Error reading {filename}: {str(e)}")
+    return indexers, confs
+
+# 将数据保存为json文件
+def save_data_to_json(data, json_path, json_pack_path):
+    version = datetime.now().strftime("%Y%m%d%H%M")
+    result = {
+        "version": version,
+        "indexer": data[0],
+        "conf": data[1]
+    }
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=True, indent=4)
+
+    with open(json_pack_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, separators=(',', ':'), ensure_ascii=True)
+
+# 将json文件转换为base64并保存到dat文件
+def save_json_to_dat(json_path, bin_path):
+    with open(json_path, "r", encoding="utf-8") as f:
+        json_data = f.read()
+    base64_data = base64.b64encode(json_data.encode("utf-8")).decode("utf-8")
+    with open(bin_path, "w", encoding="utf-8") as f:
+        f.write(base64_data)
+
 
 def format_json_file(file_path):
     """
@@ -36,93 +81,13 @@ def create_or_clear_sites_file(sites_dat_path):
     else:
         with open(sites_dat_path, "w") as f:
             pass
-
-def read_and_base64_to_sites_file(folder_path, sites_dat_path):
-    """
-    遍历文件夹并将文件内容转换为 base64 追加到 sites.dat 中
-    """
-    if not os.path.exists(sites_dat_path):
-        print("sites.dat 文件不存在，请先创建或指定正确的路径")
-        return
-    
-    for filename in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, filename)
-        if os.path.isfile(file_path):
-            with open(file_path, "r") as f:
-                file_content = f.read()
-                encoded_content = base64.b64encode(file_content.encode()).decode()
-                with open(sites_dat_path, "a") as sites_file:
-                    sites_file.write(encoded_content + "\n")
-            print(f"文件 {filename} 内容已添加到 sites.dat")
-
-def decode_base64_to_json(base64_string):
-    """
-    base64转换为json字符串
-    """
-    try:
-        decoded_bytes = base64.b64decode(base64_string)
-        decoded_json = decoded_bytes.decode("utf-8")
-        return decoded_json
-    except Exception as e:
-        print(f"Error decoding base64 string: {e}")
-        return None
-
-def convert_base64_line_to_json(line_number):
-    """
-    base64文件，输入任意行号转换json字符串
-    """
-    file_path = "sites.dat"
-    with open(file_path, "r") as f:
-        lines = f.readlines()
-
-    if 0 <= line_number < len(lines):
-        base64_string = lines[line_number].strip()
-        decoded_json = decode_base64_to_json(base64_string)
-        if decoded_json:
-            try:
-                json_data = json.loads(decoded_json)
-                json_str = json.dumps(json_data, indent=4)
-            except json.JSONDecodeError as e:
-                return f"Error decoding JSON: {e}"
-        else:
-            return "Failed to decode base64 string."
-    else:
-        return "Invalid line number."
-
-def decode_base64_to_dict(base64_string):
-    """
-    base64字符串转换json字典
-    """
-    try:
-        decoded_bytes = base64.b64decode(base64_string)
-        decoded_json = decoded_bytes.decode("utf-8")
-        return json.loads(decoded_json)
-    except Exception as e:
-        print(f"Error decoding base64 string: {e}")
-        return None
-
-def convert_base64_to_sites_file(sites_dat_path, sites_json_path):
-    """
-    将文件转换为json
-    """
-    result = []
-    with open(sites_dat_path, "r") as f:
-        lines = f.readlines()
-        for line in lines:
-            base64_string = line.strip()
-            decoded_dict = decode_base64_to_dict(base64_string)
-            if decoded_dict:
-                result.append(decoded_dict)
-    if result:
-        result_str = json.dumps(result, indent=4)
-        with open(sites_json_path, "a") as sites_file:
-            sites_file.write(result_str)
-
+            
 if __name__ == "__main__":
     format_json_files_in_folder("sites")
-    create_or_clear_sites_file("sites.dat")
-    read_and_base64_to_sites_file("sites", "sites.dat")
-
-    # 仅用来校对
-    # create_or_clear_sites_file("sites.json")
-    # convert_base64_to_sites_file("sites.dat", "sites.json")
+    create_or_clear_sites_file("user.sites.bin")
+    create_or_clear_sites_file("user.sites.json")
+    create_or_clear_sites_file("user.sites.pack.json")
+    indexers, confs = process_json_files("sites")
+    data = (indexers, confs)
+    save_data_to_json(data, "user.sites.json", "user.sites.pack.json")
+    save_json_to_dat("user.sites.pack.json", "user.sites.bin")

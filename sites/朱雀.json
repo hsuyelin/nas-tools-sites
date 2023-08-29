@@ -17,7 +17,7 @@
             }
         ]
     },
-    "price": {
+    "conf": {
         "RENDER": true,
         "FREE": [
             "//span[@class='text-download'][contains(text(),'0x')]"
@@ -29,6 +29,5 @@
         "PEER_COUNT": [
             "//div[@class='ant-form-item-control-input-content']/span[contains(text(),'\u6b63\u5728\u505a\u79cd: )]"
         ]
-    },
-    "system_type": "tnode"
+    }
 }

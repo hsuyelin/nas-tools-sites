@@ -178,7 +178,7 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//h1[@id='top']/b/font[@class='free']"
         ],
@@ -187,6 +187,5 @@
         ],
         "HR": [],
         "PEER_COUNT": []
-    },
-    "system_type": ""
+    }
 }

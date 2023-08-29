@@ -141,7 +141,7 @@
         }
     },
     "category": {},
-    "price": {
+    "conf": {
         "FREE": [
             "//div[@class='title']/img[@class='pro_free']"
         ],
@@ -150,6 +150,5 @@
         ],
         "HR": [],
         "PEER_COUNT": []
-    },
-    "system_type": ""
+    }
 }

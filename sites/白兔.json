@@ -148,7 +148,7 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//b[@class='free'][text()='\u514d\u8d39']"
         ],
@@ -157,6 +157,5 @@
         ],
         "HR": [],
         "PEER_COUNT": []
-    },
-    "system_type": ""
+    }
 }

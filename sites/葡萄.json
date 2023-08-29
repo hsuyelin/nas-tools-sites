@@ -204,13 +204,12 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//h1[@id='top']/b/font[@class='free']"
         ],
         "2XFREE": [],
         "HR": [],
         "PEER_COUNT": []
-    },
-    "system_type": ""
+    }
 }

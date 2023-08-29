@@ -184,7 +184,7 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//h1[@id='top']/b/font[@class='free']"
         ],
@@ -195,6 +195,5 @@
         "PEER_COUNT": [
             "//div[@id='peercount']/b[1]"
         ]
-    },
-    "system_type": "nexus_php"
+    }
 }

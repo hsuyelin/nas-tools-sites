@@ -162,7 +162,7 @@
             }
         ]
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-free']"
         ],
@@ -175,6 +175,5 @@
         "PEER_COUNT": [
             "//div[@id='seeder-count']"
         ]
-    },
-    "system_type": "nexus_php"
+    }
 }

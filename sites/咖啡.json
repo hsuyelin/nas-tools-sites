@@ -183,7 +183,7 @@
             }
         ]
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//img[contains(translate(@class, \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\", \"abcdefghijklmnopqrstuvwxyz\"), \"pro_freeup\")]"
         ],
@@ -192,6 +192,5 @@
         ],
         "HR": [],
         "PEER_COUNT": []
-    },
-    "system_type": ""
+    }
 }

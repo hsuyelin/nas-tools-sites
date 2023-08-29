@@ -141,13 +141,12 @@
             }
         }
     },
-    "price": {
+    "conf": {
         "FREE": [
             "//span[@class='badge bg-primary']"
         ],
         "2XFREE": [],
         "HR": [],
         "PEER_COUNT": []
-    },
-    "system_type": ""
+    }
 }

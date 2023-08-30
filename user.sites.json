@@ -1,5 +1,5 @@
 {
-    "version": "202308291044",
+    "version": "202308301312",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -5315,6 +5315,9 @@
                     "leechers": {
                         "selector": "div.torrent-info-text-leechers > a[href*=\"#leechers\"]"
                     },
+                    "grabs": {
+                        "selector": "div.torrent-info-text-finished"
+                    },
                     "date_elapsed": {
                         "selector": "div.torrent-info-text-added > span",
                         "optional": true
@@ -5355,7 +5358,7 @@
                         "selector": "div.torrent-info-text-small_name"
                     },
                     "labels": {
-                        "selector": "div > span.tag"
+                        "selector": "a[href*=\"?tag_id\"] > span.tag"
                     }
                 }
             },

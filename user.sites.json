@@ -1,5 +1,5 @@
 {
-    "version": "202308311807",
+    "version": "202308312034",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -4608,20 +4608,6 @@
                     "labels": {
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
-                },
-                "conf": {
-                    "FREE": [
-                        "//h1[@id='top']/b/font[@class='free']"
-                    ],
-                    "2XFREE": [
-                        "//h1[@id='top']/b/font[@class='twoupfree']"
-                    ],
-                    "HR": [
-                        "//h1[@id='top']/img[@class='hitandrun']"
-                    ],
-                    "PEER_COUNT": [
-                        "//div[@id='peercount']/b[1]"
-                    ]
                 }
             }
         },
@@ -16503,6 +16489,20 @@
             "PEER_COUNT": []
         },
         "pt.0ff.cc": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ptcafe.club": {
             "FREE": [
                 "//h1[@id='top']/b/font[@class='free']"
             ],

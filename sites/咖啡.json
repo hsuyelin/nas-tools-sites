@@ -176,20 +176,20 @@
             "labels": {
                 "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
             }
-        },
-        "conf": {
-            "FREE": [
-                "//h1[@id='top']/b/font[@class='free']"
-            ],
-            "2XFREE": [
-                "//h1[@id='top']/b/font[@class='twoupfree']"
-            ],
-            "HR": [
-                "//h1[@id='top']/img[@class='hitandrun']"
-            ],
-            "PEER_COUNT": [
-                "//div[@id='peercount']/b[1]"
-            ]
         }
+    },
+    "conf": {
+        "FREE": [
+            "//h1[@id='top']/b/font[@class='free']"
+        ],
+        "2XFREE": [
+            "//h1[@id='top']/b/font[@class='twoupfree']"
+        ],
+        "HR": [
+            "//h1[@id='top']/img[@class='hitandrun']"
+        ],
+        "PEER_COUNT": [
+            "//div[@id='peercount']/b[1]"
+        ]
     }
 }

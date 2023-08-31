@@ -1,7 +1,7 @@
 {
-    "id": "hongdoufan",
-    "name": "\u7ea2\u8c46\u996d",
-    "domain": "https://hdfans.org/",
+    "id": "PTLSP",
+    "name": "PTLSP",
+    "domain": "https://www.ptlsp.com/",
     "encoding": "UTF-8",
     "public": false,
     "search": {
@@ -29,24 +29,24 @@
         ],
         "tv": [
             {
-                "id": 402,
-                "cat": "TV",
-                "desc": "TV Series/\u7535\u89c6\u5267"
-            },
-            {
-                "id": 403,
+                "id": 404,
                 "cat": "TV/Documentary",
                 "desc": "Documentaries/\u7eaa\u5f55\u7247"
             },
             {
-                "id": 416,
-                "cat": "TV",
-                "desc": "TV Shows/\u7efc\u827a"
-            },
-            {
-                "id": 417,
+                "id": 405,
                 "cat": "TV/Anime",
                 "desc": "Animations/\u52a8\u6f2b"
+            },
+            {
+                "id": 402,
+                "cat": "TV",
+                "desc": "TV Series/\u8fde\u7eed\u5267"
+            },
+            {
+                "id": 403,
+                "cat": "TV",
+                "desc": "TV Shows/\u7efc\u827a"
             }
         ]
     },
@@ -93,28 +93,32 @@
                 "selector": "a[href*=\"details.php?id=\"]",
                 "attribute": "href"
             },
+            "poster": {
+                "selector": "img[data-orig]",
+                "attribute": "data-orig"
+            },
             "download": {
                 "selector": "a[href*=\"download.php?id=\"]",
                 "attribute": "href"
             },
             "size": {
-                "selector": "td:nth-child(5)"
+                "selector": "td.rowfollow:nth-child(5)"
             },
             "grabs": {
-                "selector": "td:nth-child(8)"
+                "selector": "td.rowfollow:nth-child(8)"
             },
             "seeders": {
-                "selector": "td:nth-child(6)"
+                "selector": "td.rowfollow:nth-child(6)"
             },
             "leechers": {
-                "selector": "td:nth-child(7)"
+                "selector": "td.rowfollow:nth-child(7)"
             },
             "date_elapsed": {
-                "selector": "td:nth-child(4) > span",
+                "selector": "td.rowfollow:nth-child(4) > span",
                 "optional": true
             },
             "date_added": {
-                "selector": "td:nth-child(4) > span",
+                "selector": "td.rowfollow:nth-child(4) > span",
                 "attribute": "title",
                 "optional": true
             },
@@ -148,7 +152,7 @@
             "free_deadline": {
                 "default_value": "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}",
                 "default_value_format": "%Y-%m-%d %H:%M:%S.%f",
-                "selector": "td[class=\"embedded\"] > font > span[title]",
+                "selector": "div > b > span[title]",
                 "attribute": "title",
                 "filters": [
                     {
@@ -157,13 +161,20 @@
                     }
                 ]
             },
+            "tags": {
+                "selector": "div > a.torrents-tag"
+            },
+            "subject": {
+                "selector": "td.embedded:nth-child(2) > div > div:nth-child(2) > span",
+                "contents": -1
+            },
             "description": {
-                "selector": "td:nth-child(2) > table > tr > td.embedded",
-                "remove": "div,font",
+                "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
+                "remove": "span,a,img,font,b",
                 "contents": -1
             },
             "labels": {
-                "selector": "table.torrentname > tr > td:nth-child(2) > span"
+                "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
             }
         }
     },
@@ -174,7 +185,9 @@
         "2XFREE": [
             "//h1[@id='top']/b/font[@class='twoupfree']"
         ],
-        "HR": [],
+        "HR": [
+            "//h1[@id='top']/img[@class='hitandrun']"
+        ],
         "PEER_COUNT": [
             "//div[@id='peercount']/b[1]"
         ]

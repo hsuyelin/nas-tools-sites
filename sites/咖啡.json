@@ -19,11 +19,37 @@
             "space_replace": "_"
         }
     },
-    "batch": {
-        "delimiter": " ",
-        "space_replace": "_"
+    "category": {
+        "movie": [
+            {
+                "id": 401,
+                "cat": "Movies",
+                "desc": "Movies/\u7535\u5f71"
+            }
+        ],
+        "tv": [
+            {
+                "id": 404,
+                "cat": "TV/Documentary",
+                "desc": "Documentaries/\u7eaa\u5f55\u7247"
+            },
+            {
+                "id": 405,
+                "cat": "TV/Anime",
+                "desc": "Animations/\u52a8\u6f2b"
+            },
+            {
+                "id": 402,
+                "cat": "TV",
+                "desc": "TV Series/\u8fde\u7eed\u5267"
+            },
+            {
+                "id": 403,
+                "cat": "TV",
+                "desc": "TV Shows/\u7efc\u827a"
+            }
+        ]
     },
-    "browse": {},
     "torrents": {
         "list": {
             "selector": "table.torrents > tr:has(\"table.torrentname\")"
@@ -150,52 +176,20 @@
             "labels": {
                 "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
             }
+        },
+        "conf": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
         }
-    },
-    "category": {
-        "movie": [
-            {
-                "id": 401,
-                "cat": "Movies",
-                "desc": "Movies/\u7535\u5f71"
-            }
-        ],
-        "tv": [
-            {
-                "id": 404,
-                "cat": "TV/Documentary",
-                "desc": "Documentaries/\u7eaa\u5f55\u7247"
-            },
-            {
-                "id": 405,
-                "cat": "TV/Anime",
-                "desc": "Animations/\u52a8\u6f2b"
-            },
-            {
-                "id": 402,
-                "cat": "TV",
-                "desc": "TV Series/\u8fde\u7eed\u5267"
-            },
-            {
-                "id": 403,
-                "cat": "TV",
-                "desc": "TV Shows/\u7efc\u827a"
-            }
-        ]
-    },
-    "conf": {
-        "FREE": [
-            "//h1[@id='top']/b/font[@class='free']"
-        ],
-        "2XFREE": [
-            "//h1[@id='top']/b/font[@class='twoupfree']"
-        ],
-        "HR": [
-            "//h1[@id='top']/img[@class='hitandrun']"
-        ],
-        "PEER_COUNT": [
-            "//div[@id='peercount']/b[1]"
-        ]
-    },
-    "system_type": ""
+    }
 }

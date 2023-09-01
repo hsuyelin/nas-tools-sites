@@ -1,5 +1,5 @@
 {
-    "version": "202309011337",
+    "version": "202308312034",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -4001,153 +4001,6 @@
                     }
                 }
             }
-        },
-        {
-            "id": "butterfly",
-            "name": "\u8774\u8776",
-            "domain": "https://hudbt.hust.edu.cn/",
-            "encoding": "UTF-8",
-            "public": false,
-            "search": {
-                "paths": [
-                    {
-                        "path": "torrents.php",
-                        "method": "get"
-                    }
-                ],
-                "params": {
-                    "search": "{keyword}",
-                    "search_area": 4
-                },
-                "batch": {
-                    "delimiter": " ",
-                    "space_replace": "_"
-                }
-            },
-            "batch": {
-                "delimiter": " ",
-                "space_replace": "_"
-            },
-            "browse": {},
-            "torrents": {
-                "list": {
-                    "selector": "table#torrents > tbody > tr"
-                },
-                "fields": {
-                    "id": {
-                        "selector": "a[href*=\"details.php?id=\"]",
-                        "attribute": "href",
-                        "filters": [
-                            {
-                                "name": "re_search",
-                                "args": [
-                                    "\\d+",
-                                    0
-                                ]
-                            }
-                        ]
-                    },
-                    "title_default": {
-                        "selector": "a[href*=\"details.php?id=\"]"
-                    },
-                    "title_optional": {
-                        "optional": true,
-                        "selector": "a[title][href*=\"details.php?id=\"]",
-                        "attribute": "title"
-                    },
-                    "title": {
-                        "text": "{% if fields['title_optional'] %}{{ fields['title_optional'] }}{% else %}{{ fields['title_default'] }}{% endif %}"
-                    },
-                    "category": {
-                        "selector": "a[href*=\"?cat=\"]",
-                        "attribute": "href",
-                        "filters": [
-                            {
-                                "name": "replace",
-                                "args": [
-                                    "?",
-                                    ""
-                                ]
-                            },
-                            {
-                                "name": "querystring",
-                                "args": "cat"
-                            }
-                        ]
-                    },
-                    "details": {
-                        "selector": "a[href*=\"details.php?id=\"]",
-                        "attribute": "href"
-                    },
-                    "download": {
-                        "selector": "a[href*=\"download.php?id=\"]",
-                        "attribute": "href"
-                    },
-                    "date_added": {
-                        "selector": "td:nth-child(4)"
-                    },
-                    "date": {
-                        "text": "{% if fields['date_elapsed'] or fields['date_added'] %}{{ fields['date_elapsed'] if fields['date_elapsed'] else fields['date_added'] }}{% else %}now{% endif %}",
-                        "filters": [
-                            {
-                                "name": "dateparse",
-                                "args": "%Y-%m-%d %H:%M:%S"
-                            }
-                        ]
-                    },
-                    "size": {
-                        "selector": "td:nth-child(5)"
-                    },
-                    "seeders": {
-                        "selector": "td:nth-child(6)"
-                    },
-                    "leechers": {
-                        "selector": "td:nth-child(7)"
-                    },
-                    "grabs": {
-                        "selector": "td:nth-child(8)"
-                    },
-                    "downloadvolumefactor": {
-                        "case": {
-                            "img.free": 0,
-                            "img.twoupfree": 0,
-                            "img.thirtypercent": 0.3,
-                            "img.fiftypercent": 0.5,
-                            "*": 1
-                        }
-                    },
-                    "uploadvolumefactor": {
-                        "case": {
-                            "img.twoupfree": 2,
-                            "*": 1
-                        }
-                    },
-                    "free_deadline": {
-                        "default_value": "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}",
-                        "default_value_format": "%Y-%m-%d %H:%M:%S.%f",
-                        "selector": "img.pro_free,img.pro_free2up",
-                        "attribute": "onmouseover",
-                        "filters": [
-                            {
-                                "name": "re_search",
-                                "args": [
-                                    "\\d+-\\d+-\\d+ \\d+:\\d+:\\d+",
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "dateparse",
-                                "args": "%Y-%m-%d %H:%M:%S"
-                            }
-                        ]
-                    },
-                    "description": {
-                        "selector": "td:nth-child(2) > div > div > div:nth-child(2) > h3",
-                        "attribute": "title"
-                    }
-                }
-            },
-            "category": {}
         },
         {
             "id": "JPTV",
@@ -8608,19 +8461,74 @@
                     }
                 ],
                 "params": {
-                    "search": "{keyword}",
-                    "search_area": 4
+                    "search": "{keyword}"
                 },
                 "batch": {
                     "delimiter": " ",
                     "space_replace": "_"
                 }
             },
-            "batch": {
-                "delimiter": " ",
-                "space_replace": "_"
+            "category": {
+                "movie": [
+                    {
+                        "id": 401,
+                        "cat": "Movies",
+                        "desc": "\u4e2d\u56fd\u5927\u9646(CHN)"
+                    },
+                    {
+                        "id": 404,
+                        "cat": "Movies",
+                        "desc": "\u4e2d\u56fd\u9999\u6e2f\u7279\u522b\u884c\u653f\u533a(HKG)"
+                    },
+                    {
+                        "id": 405,
+                        "cat": "Movies",
+                        "desc": "\u4e2d\u56fd\u53f0\u6e7e\u7701(TWN)"
+                    },
+                    {
+                        "id": 402,
+                        "cat": "Movies",
+                        "desc": "\u6cf0\u56fd(THA)"
+                    },
+                    {
+                        "id": 403,
+                        "cat": "Movies",
+                        "desc": "\u65e5\u672c(JPN)"
+                    },
+                    {
+                        "id": 406,
+                        "cat": "Movies",
+                        "desc": "\u97e9\u56fd(KOR)"
+                    },
+                    {
+                        "id": 410,
+                        "cat": "Movies",
+                        "desc": "\u4e16\u754c(World)"
+                    }
+                ],
+                "tv": [
+                    {
+                        "id": 411,
+                        "cat": "TV",
+                        "desc": "\u5267\u96c6(Series)"
+                    },
+                    {
+                        "id": 413,
+                        "cat": "TV/Documentary",
+                        "desc": "\u8bb0\u5f55(Documentary)"
+                    },
+                    {
+                        "id": 416,
+                        "cat": "TV",
+                        "desc": "\u7efc\u827a(Variety Show)"
+                    },
+                    {
+                        "id": 419,
+                        "cat": "TV/Anime",
+                        "desc": "\u52a8\u6f2b(Animation)"
+                    }
+                ]
             },
-            "browse": {},
             "torrents": {
                 "list": {
                     "selector": "table.torrents > tr:has(\"table.torrentname\")"
@@ -8761,77 +8669,6 @@
                         "contents": -1
                     }
                 }
-            },
-            "category": {
-                "movie": [
-                    {
-                        "id": 401,
-                        "cat": "Movies",
-                        "desc": "\u4e2d\u56fd\u5927\u9646(CHN)"
-                    },
-                    {
-                        "id": 404,
-                        "cat": "Movies",
-                        "desc": "\u4e2d\u56fd\u9999\u6e2f\u7279\u522b\u884c\u653f\u533a(HKG)"
-                    },
-                    {
-                        "id": 405,
-                        "cat": "Movies",
-                        "desc": "\u4e2d\u56fd\u53f0\u6e7e\u7701(TWN)"
-                    },
-                    {
-                        "id": 402,
-                        "cat": "Movies",
-                        "desc": "\u6cf0\u56fd(THA)"
-                    },
-                    {
-                        "id": 403,
-                        "cat": "Movies",
-                        "desc": "\u65e5\u672c(JPN)"
-                    },
-                    {
-                        "id": 406,
-                        "cat": "Movies",
-                        "desc": "\u97e9\u56fd(KOR)"
-                    },
-                    {
-                        "id": 410,
-                        "cat": "Movies",
-                        "desc": "\u4e16\u754c(World)"
-                    },
-                    {
-                        "id": 419,
-                        "cat": "Anime",
-                        "desc": "\u52a8\u6f2b(Animation)"
-                    },
-                    {
-                        "id": 413,
-                        "cat": "Documentary",
-                        "desc": "\u8bb0\u5f55(Documentary)"
-                    }
-                ],
-                "tv": [
-                    {
-                        "id": 411,
-                        "cat": "TV",
-                        "desc": "\u5267\u96c6(Series)"
-                    },
-                    {
-                        "id": 413,
-                        "cat": "Documentary",
-                        "desc": "\u8bb0\u5f55(Documentary)"
-                    },
-                    {
-                        "id": 416,
-                        "cat": "TV",
-                        "desc": "\u7efc\u827a(Variety Show)"
-                    },
-                    {
-                        "id": 419,
-                        "cat": "Anime",
-                        "desc": "\u52a8\u6f2b(Animation)"
-                    }
-                ]
             }
         },
         {
@@ -9051,19 +8888,229 @@
                     }
                 ],
                 "params": {
-                    "search": "{keyword}",
-                    "search_area": 4
+                    "search": "{keyword}"
                 },
                 "batch": {
                     "delimiter": " ",
                     "space_replace": "_"
                 }
             },
-            "batch": {
-                "delimiter": " ",
-                "space_replace": "_"
+            "category": {
+                "movie": [
+                    {
+                        "id": 411,
+                        "cat": "Movies/SD",
+                        "desc": "Movies SD"
+                    },
+                    {
+                        "id": 412,
+                        "cat": "Movies",
+                        "desc": "Movies IPad"
+                    },
+                    {
+                        "id": 413,
+                        "cat": "Movies/HD",
+                        "desc": "Movies 720p"
+                    },
+                    {
+                        "id": 414,
+                        "cat": "Movies/HD",
+                        "desc": "Movies 1080p"
+                    },
+                    {
+                        "id": 415,
+                        "cat": "Movies",
+                        "desc": "Movies REMUX"
+                    },
+                    {
+                        "id": 450,
+                        "cat": "Movies/BluRay",
+                        "desc": "Movies Bluray"
+                    },
+                    {
+                        "id": 499,
+                        "cat": "Movies/UHD",
+                        "desc": "Movies UHD Blu-ray"
+                    },
+                    {
+                        "id": 416,
+                        "cat": "Movies/UHD",
+                        "desc": "Movies 2160p"
+                    }
+                ],
+                "tv": [
+                    {
+                        "id": 417,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc SD"
+                    },
+                    {
+                        "id": 418,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc IPad"
+                    },
+                    {
+                        "id": 419,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc 720p"
+                    },
+                    {
+                        "id": 420,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc 1080p"
+                    },
+                    {
+                        "id": 421,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc REMUX"
+                    },
+                    {
+                        "id": 451,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc Bluray"
+                    },
+                    {
+                        "id": 500,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc UHD Blu-ray"
+                    },
+                    {
+                        "id": 422,
+                        "cat": "TV/Documentary",
+                        "desc": "Doc 2160p"
+                    },
+                    {
+                        "id": 425,
+                        "cat": "TV/SD",
+                        "desc": "TVShow SD"
+                    },
+                    {
+                        "id": 426,
+                        "cat": "TV",
+                        "desc": "TVShow IPad"
+                    },
+                    {
+                        "id": 471,
+                        "cat": "TV",
+                        "desc": "TVShow IPad"
+                    },
+                    {
+                        "id": 427,
+                        "cat": "TV/HD",
+                        "desc": "TVShow 720p"
+                    },
+                    {
+                        "id": 472,
+                        "cat": "TV/HD",
+                        "desc": "TVShow 720p"
+                    },
+                    {
+                        "id": 428,
+                        "cat": "TV/HD",
+                        "desc": "TVShow 1080i"
+                    },
+                    {
+                        "id": 429,
+                        "cat": "TV/HD",
+                        "desc": "TVShow 1080p"
+                    },
+                    {
+                        "id": 430,
+                        "cat": "TV",
+                        "desc": "TVShow REMUX"
+                    },
+                    {
+                        "id": 452,
+                        "cat": "TV/HD",
+                        "desc": "TVShow Bluray"
+                    },
+                    {
+                        "id": 431,
+                        "cat": "TV/UHD",
+                        "desc": "TVShow 2160p"
+                    },
+                    {
+                        "id": 432,
+                        "cat": "TV/SD",
+                        "desc": "TVSeries SD"
+                    },
+                    {
+                        "id": 433,
+                        "cat": "TV",
+                        "desc": "TVSeries IPad"
+                    },
+                    {
+                        "id": 434,
+                        "cat": "TV/HD",
+                        "desc": "TVSeries 720p"
+                    },
+                    {
+                        "id": 435,
+                        "cat": "TV/HD",
+                        "desc": "TVSeries 1080i"
+                    },
+                    {
+                        "id": 436,
+                        "cat": "TV/HD",
+                        "desc": "TVSeries 1080p"
+                    },
+                    {
+                        "id": 437,
+                        "cat": "TV",
+                        "desc": "TVSeries REMUX"
+                    },
+                    {
+                        "id": 453,
+                        "cat": "TV/HD",
+                        "desc": "TVSeries Bluray"
+                    },
+                    {
+                        "id": 438,
+                        "cat": "TV/UHD",
+                        "desc": "TVSeries 2160p"
+                    },
+                    {
+                        "id": 444,
+                        "cat": "TV/Anime",
+                        "desc": "Anime SD"
+                    },
+                    {
+                        "id": 445,
+                        "cat": "TV/Anime",
+                        "desc": "Anime IPad"
+                    },
+                    {
+                        "id": 446,
+                        "cat": "TV/Anime",
+                        "desc": "Anime 720p"
+                    },
+                    {
+                        "id": 447,
+                        "cat": "TV/Anime",
+                        "desc": "Anime 1080p"
+                    },
+                    {
+                        "id": 448,
+                        "cat": "TV/Anime",
+                        "desc": "Anime REMUX"
+                    },
+                    {
+                        "id": 454,
+                        "cat": "TV/Anime",
+                        "desc": "Anime Bluray"
+                    },
+                    {
+                        "id": 449,
+                        "cat": "TV/Anime",
+                        "desc": "Anime 2160p"
+                    },
+                    {
+                        "id": 501,
+                        "cat": "TV/Anime",
+                        "desc": "Anime UHD Blu-ray"
+                    }
+                ]
             },
-            "browse": {},
             "torrents": {
                 "list": {
                     "selector": "table.torrents > tr:has(\"table.torrentname\")"
@@ -9082,16 +9129,6 @@
                             }
                         ]
                     },
-                    "category": {
-                        "selector": "a[href*=\"?cat=\"]",
-                        "attribute": "href",
-                        "filters": [
-                            {
-                                "name": "querystring",
-                                "args": "cat"
-                            }
-                        ]
-                    },
                     "title_default": {
                         "selector": "a[href*=\"details.php?id=\"]"
                     },
@@ -9103,36 +9140,50 @@
                     "title": {
                         "text": "{% if fields['title_optional'] %}{{ fields['title_optional'] }}{% else %}{{ fields['title_default'] }}{% endif %}"
                     },
+                    "category": {
+                        "selector": "a[href*=\"?cat=\"]",
+                        "attribute": "href",
+                        "filters": [
+                            {
+                                "name": "replace",
+                                "args": [
+                                    "?",
+                                    ""
+                                ]
+                            },
+                            {
+                                "name": "querystring",
+                                "args": "cat"
+                            }
+                        ]
+                    },
                     "details": {
                         "selector": "a[href*=\"details.php?id=\"]",
                         "attribute": "href"
-                    },
-                    "poster": {
-                        "selector": "img[data-orig]",
-                        "attribute": "data-orig"
                     },
                     "download": {
                         "selector": "a[href*=\"download.php?id=\"]",
                         "attribute": "href"
                     },
-                    "size": {
-                        "selector": "td.rowfollow:nth-child(5)"
-                    },
-                    "grabs": {
-                        "selector": "td.rowfollow:nth-child(8)"
-                    },
-                    "seeders": {
-                        "selector": "td.rowfollow:nth-child(6)"
-                    },
-                    "leechers": {
-                        "selector": "td.rowfollow:nth-child(7)"
+                    "imdbid": {
+                        "selector": "div.imdb_100 > a",
+                        "attribute": "href",
+                        "filters": [
+                            {
+                                "name": "re_search",
+                                "args": [
+                                    "tt\\d+",
+                                    0
+                                ]
+                            }
+                        ]
                     },
                     "date_elapsed": {
-                        "selector": "td.rowfollow:nth-child(4) > span",
+                        "selector": "td:nth-child(4) > span",
                         "optional": true
                     },
                     "date_added": {
-                        "selector": "td.rowfollow:nth-child(4) > span",
+                        "selector": "td:nth-child(4) > span",
                         "attribute": "title",
                         "optional": true
                     },
@@ -9144,6 +9195,18 @@
                                 "args": "%Y-%m-%d %H:%M:%S"
                             }
                         ]
+                    },
+                    "size": {
+                        "selector": "td:nth-child(5)"
+                    },
+                    "seeders": {
+                        "selector": "td:nth-child(6)"
+                    },
+                    "leechers": {
+                        "selector": "td:nth-child(7)"
+                    },
+                    "grabs": {
+                        "selector": "td:nth-child(8)"
                     },
                     "downloadvolumefactor": {
                         "case": {
@@ -9166,9 +9229,16 @@
                     "free_deadline": {
                         "default_value": "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}",
                         "default_value_format": "%Y-%m-%d %H:%M:%S.%f",
-                        "selector": "div > b > span[title]",
-                        "attribute": "title",
+                        "selector": "img.pro_free,img.pro_free2up",
+                        "attribute": "onmouseover",
                         "filters": [
+                            {
+                                "name": "re_search",
+                                "args": [
+                                    "\\d+-\\d+-\\d+ \\d+:\\d+:\\d+",
+                                    0
+                                ]
+                            },
                             {
                                 "name": "dateparse",
                                 "args": "%Y-%m-%d %H:%M:%S"
@@ -9188,50 +9258,9 @@
                         "contents": -1
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     }
                 }
-            },
-            "category": {
-                "movie": [
-                    {
-                        "id": 401,
-                        "cat": "Movies",
-                        "desc": "Movies/\u7535\u5f71"
-                    },
-                    {
-                        "id": 405,
-                        "cat": "Anime",
-                        "desc": "Animations/\u52a8\u6f2b"
-                    },
-                    {
-                        "id": 404,
-                        "cat": "Documentary",
-                        "desc": "Documentaries/\u7eaa\u5f55\u7247"
-                    }
-                ],
-                "tv": [
-                    {
-                        "id": 404,
-                        "cat": "Documentary",
-                        "desc": "Documentaries/\u7eaa\u5f55\u7247"
-                    },
-                    {
-                        "id": 405,
-                        "cat": "Anime",
-                        "desc": "Animations/\u52a8\u6f2b"
-                    },
-                    {
-                        "id": 402,
-                        "cat": "TV",
-                        "desc": "TV Series/\u8fde\u7eed\u5267"
-                    },
-                    {
-                        "id": 403,
-                        "cat": "TV",
-                        "desc": "TV Shows/\u7efc\u827a"
-                    }
-                ]
             }
         },
         {
@@ -10192,32 +10221,28 @@
                         "selector": "a[href*=\"details.php?id=\"]",
                         "attribute": "href"
                     },
-                    "poster": {
-                        "selector": "img[data-orig]",
-                        "attribute": "data-orig"
-                    },
                     "download": {
                         "selector": "a[href*=\"download.php?id=\"]",
                         "attribute": "href"
                     },
                     "size": {
-                        "selector": "td.rowfollow:nth-child(7)"
+                        "selector": "td:nth-child(7)"
                     },
                     "grabs": {
-                        "selector": "td.rowfollow:nth-child(10)"
+                        "selector": "td:nth-child(10)"
                     },
                     "seeders": {
-                        "selector": "td.rowfollow:nth-child(8)"
+                        "selector": "td:nth-child(8)"
                     },
                     "leechers": {
-                        "selector": "td.rowfollow:nth-child(9)"
+                        "selector": "td:nth-child(9)"
                     },
                     "date_elapsed": {
-                        "selector": "td.rowfollow:nth-child(6) > span",
+                        "selector": "td:nth-child(6) > span",
                         "optional": true
                     },
                     "date_added": {
-                        "selector": "td.rowfollow:nth-child(6) > span",
+                        "selector": "td:nth-child(6) > span",
                         "attribute": "title",
                         "optional": true
                     },
@@ -10251,7 +10276,7 @@
                     "free_deadline": {
                         "default_value": "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}",
                         "default_value_format": "%Y-%m-%d %H:%M:%S.%f",
-                        "selector": "div > b > span[title]",
+                        "selector": "td[class=\"embedded\"] > b > span[title]",
                         "attribute": "title",
                         "filters": [
                             {
@@ -10260,12 +10285,9 @@
                             }
                         ]
                     },
-                    "tags": {
-                        "selector": "div > a.torrents-tag"
-                    },
                     "description": {
                         "selector": "table.torrentname > tr > td.embedded > font",
-                        "contents": -1
+                        "index": -1
                     },
                     "labels": {
                         "selector": "table.torrentname > tr > td.embedded > i > a"
@@ -16916,7 +16938,9 @@
             "2XFREE": [
                 "//h1[@id='top']/b/font[@class='twoupfree']"
             ],
-            "HR": [],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
             "PEER_COUNT": [
                 "//div[@id='peercount']/b[1]"
             ]

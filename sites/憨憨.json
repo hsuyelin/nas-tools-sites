@@ -2,9 +2,8 @@
     "id": "hanhan",
     "name": "\u61a8\u61a8",
     "encoding": "UTF-8",
-    "public": false,
-    "proxy": false,
     "domain": "https://hhanclub.top/",
+    "public": false,
     "search": {
         "paths": [
             {
@@ -14,7 +13,7 @@
         ],
         "params": {
             "search": "{keyword}",
-            "search_area": 1
+            "search_area": 4
         },
         "batch": {
             "delimiter": " ",
@@ -82,9 +81,6 @@
             "leechers": {
                 "selector": "div.torrent-info-text-leechers > a[href*=\"#leechers\"]"
             },
-            "grabs": {
-                "selector": "div.torrent-info-text-finished"
-            },
             "date_elapsed": {
                 "selector": "div.torrent-info-text-added > span",
                 "optional": true
@@ -125,7 +121,7 @@
                 "selector": "div.torrent-info-text-small_name"
             },
             "labels": {
-                "selector": "a[href*=\"?tag_id\"] > span.tag"
+                "selector": "a > span.tag"
             }
         }
     },
@@ -140,12 +136,17 @@
                 "id": 405,
                 "cat": "Anime",
                 "desc": "Animations/\u52a8\u6f2b"
+            },
+            {
+                "id": 404,
+                "cat": "Documentary",
+                "desc": "Documentaries/\u7eaa\u5f55\u7247"
             }
         ],
         "tv": [
             {
                 "id": 404,
-                "cat": "TV/Documentary",
+                "cat": "Documentary",
                 "desc": "Documentaries/\u7eaa\u5f55\u7247"
             },
             {
@@ -167,16 +168,14 @@
     },
     "conf": {
         "FREE": [
-            "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-free']"
+            "//h1[@id='top']/b/font[@class='free']"
         ],
-        "2XFREE": [
-            "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-2xfree']"
-        ],
+        "2XFREE": [],
         "HR": [
-            "//span[contains(text(), 'H&R')]"
+            "//h1[@id='top']/img[@class='hitandrun']"
         ],
         "PEER_COUNT": [
-            "//div[@id='seeder-count']"
+            "//div[@id='peercount']/b[1]"
         ]
     }
 }

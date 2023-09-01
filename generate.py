@@ -81,6 +81,22 @@ def create_or_clear_sites_file(sites_dat_path):
     else:
         with open(sites_dat_path, "w") as f:
             pass
+
+def convert_base64_to_json(input_file_path, output_file_path):
+    """
+    旧的json转换方法
+    """
+    with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
+        line_number = 0
+        for line in input_file:
+            line_number += 1
+            try:
+                decoded_line = base64.b64decode(line.strip()).decode('utf-8')
+                json_data = json.loads(decoded_line)
+                json.dump(json_data, output_file)
+                output_file.write('\n')
+            except Exception as e:
+                print(f"Error on line {line_number}: {str(e)}")
             
 if __name__ == "__main__":
     format_json_files_in_folder("sites")
@@ -91,3 +107,7 @@ if __name__ == "__main__":
     data = (indexers, confs)
     save_data_to_json(data, "user.sites.json", "user.sites.pack.json")
     save_json_to_dat("user.sites.pack.json", "user.sites.bin")
+
+    #旧的json转换方法
+    # create_or_clear_sites_file("old/user.sites.old.json")
+    # convert_base64_to_json("old/user.sites.dat", "old/user.sites.old.json")

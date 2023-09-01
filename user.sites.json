@@ -16864,7 +16864,6 @@
             ]
         },
         "zhuque.in": {
-            "RENDER": true,
             "FREE": [
                 "//span[@class='text-download'][contains(text(),'0x')]"
             ],

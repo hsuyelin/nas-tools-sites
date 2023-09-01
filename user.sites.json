@@ -1,5 +1,5 @@
 {
-    "version": "202309011350",
+    "version": "202309011337",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -5923,8 +5923,9 @@
             "id": "hanhan",
             "name": "\u61a8\u61a8",
             "encoding": "UTF-8",
-            "domain": "https://hhanclub.top/",
             "public": false,
+            "proxy": false,
+            "domain": "https://hhanclub.top/",
             "search": {
                 "paths": [
                     {
@@ -5934,7 +5935,7 @@
                 ],
                 "params": {
                     "search": "{keyword}",
-                    "search_area": 4
+                    "search_area": 1
                 },
                 "batch": {
                     "delimiter": " ",
@@ -6002,6 +6003,9 @@
                     "leechers": {
                         "selector": "div.torrent-info-text-leechers > a[href*=\"#leechers\"]"
                     },
+                    "grabs": {
+                        "selector": "div.torrent-info-text-finished"
+                    },
                     "date_elapsed": {
                         "selector": "div.torrent-info-text-added > span",
                         "optional": true
@@ -6042,7 +6046,7 @@
                         "selector": "div.torrent-info-text-small_name"
                     },
                     "labels": {
-                        "selector": "a > span.tag"
+                        "selector": "a[href*=\"?tag_id\"] > span.tag"
                     }
                 }
             },
@@ -6057,17 +6061,12 @@
                         "id": 405,
                         "cat": "Anime",
                         "desc": "Animations/\u52a8\u6f2b"
-                    },
-                    {
-                        "id": 404,
-                        "cat": "Documentary",
-                        "desc": "Documentaries/\u7eaa\u5f55\u7247"
                     }
                 ],
                 "tv": [
                     {
                         "id": 404,
-                        "cat": "Documentary",
+                        "cat": "TV/Documentary",
                         "desc": "Documentaries/\u7eaa\u5f55\u7247"
                     },
                     {
@@ -16550,14 +16549,16 @@
         },
         "hhanclub.top": {
             "FREE": [
-                "//h1[@id='top']/b/font[@class='free']"
+                "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-free']"
             ],
-            "2XFREE": [],
+            "2XFREE": [
+                "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-2xfree']"
+            ],
             "HR": [
-                "//h1[@id='top']/img[@class='hitandrun']"
+                "//span[contains(text(), 'H&R')]"
             ],
             "PEER_COUNT": [
-                "//div[@id='peercount']/b[1]"
+                "//div[@id='seeder-count']"
             ]
         },
         "hdatmos.club": {

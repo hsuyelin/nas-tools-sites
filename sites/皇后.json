@@ -67,28 +67,32 @@
                 "selector": "a[href*=\"details.php?id=\"]",
                 "attribute": "href"
             },
+            "poster": {
+                "selector": "img[data-orig]",
+                "attribute": "data-orig"
+            },
             "download": {
                 "selector": "a[href*=\"download.php?id=\"]",
                 "attribute": "href"
             },
             "size": {
-                "selector": "td:nth-child(7)"
+                "selector": "td.rowfollow:nth-child(7)"
             },
             "grabs": {
-                "selector": "td:nth-child(10)"
+                "selector": "td.rowfollow:nth-child(10)"
             },
             "seeders": {
-                "selector": "td:nth-child(8)"
+                "selector": "td.rowfollow:nth-child(8)"
             },
             "leechers": {
-                "selector": "td:nth-child(9)"
+                "selector": "td.rowfollow:nth-child(9)"
             },
             "date_elapsed": {
-                "selector": "td:nth-child(6) > span",
+                "selector": "td.rowfollow:nth-child(6) > span",
                 "optional": true
             },
             "date_added": {
-                "selector": "td:nth-child(6) > span",
+                "selector": "td.rowfollow:nth-child(6) > span",
                 "attribute": "title",
                 "optional": true
             },
@@ -122,7 +126,7 @@
             "free_deadline": {
                 "default_value": "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}",
                 "default_value_format": "%Y-%m-%d %H:%M:%S.%f",
-                "selector": "td[class=\"embedded\"] > b > span[title]",
+                "selector": "div > b > span[title]",
                 "attribute": "title",
                 "filters": [
                     {
@@ -131,9 +135,12 @@
                     }
                 ]
             },
+            "tags": {
+                "selector": "div > a.torrents-tag"
+            },
             "description": {
                 "selector": "table.torrentname > tr > td.embedded > font",
-                "index": -1
+                "contents": -1
             },
             "labels": {
                 "selector": "table.torrentname > tr > td.embedded > i > a"

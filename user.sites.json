@@ -1,5 +1,5 @@
 {
-    "version": "202309031551",
+    "version": "202309031910",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -4865,97 +4865,11 @@
                     "space_replace": "_"
                 }
             },
-            "category": {
-                "movie": [
-                    {
-                        "id": 20,
-                        "cat": "Movies/BluRay",
-                        "desc": "Movie Full BD"
-                    },
-                    {
-                        "id": 17,
-                        "cat": "Movies/HD",
-                        "desc": "Movie 1080p"
-                    },
-                    {
-                        "id": 16,
-                        "cat": "Movies/HD",
-                        "desc": "Movie 1080i"
-                    },
-                    {
-                        "id": 9,
-                        "cat": "Movies/HD",
-                        "desc": "Movie 720p"
-                    },
-                    {
-                        "id": 27,
-                        "cat": "Movies/SD",
-                        "desc": "iPad Video"
-                    }
-                ],
-                "tv": [
-                    {
-                        "id": 13,
-                        "cat": "TV",
-                        "desc": "EU/US TV series"
-                    },
-                    {
-                        "id": 25,
-                        "cat": "TV",
-                        "desc": "Chinese TV series"
-                    },
-                    {
-                        "id": 26,
-                        "cat": "TV",
-                        "desc": "Kor Drama"
-                    },
-                    {
-                        "id": 24,
-                        "cat": "TV",
-                        "desc": "Jpn Drama"
-                    },
-                    {
-                        "id": 21,
-                        "cat": "TV",
-                        "desc": "EU/US TV series pack"
-                    },
-                    {
-                        "id": 22,
-                        "cat": "TV",
-                        "desc": "Chinese TV series pack"
-                    },
-                    {
-                        "id": 23,
-                        "cat": "TV",
-                        "desc": "JPN/KOR drama pack"
-                    },
-                    {
-                        "id": 5,
-                        "cat": "TV/Documentary",
-                        "desc": "Documentary"
-                    },
-                    {
-                        "id": 14,
-                        "cat": "TV/Anime",
-                        "desc": "Animation"
-                    },
-                    {
-                        "id": 401,
-                        "cat": "TV",
-                        "desc": "TV Shows"
-                    },
-                    {
-                        "id": 411,
-                        "cat": "TV",
-                        "desc": "Travel"
-                    },
-                    {
-                        "id": 412,
-                        "cat": "TV",
-                        "desc": "Food"
-                    }
-                ]
+            "batch": {
+                "delimiter": " ",
+                "space_replace": "_"
             },
+            "browse": {},
             "torrents": {
                 "list": {
                     "selector": "table.torrent_list tr:has(\"td.t_cat\")"
@@ -5063,6 +4977,92 @@
                         }
                     }
                 }
+            },
+            "category": {
+                "movie": [
+                    {
+                        "id": 20,
+                        "cat": "Movies/BluRay",
+                        "desc": "Movie Full BD"
+                    },
+                    {
+                        "id": 17,
+                        "cat": "Movies/HD",
+                        "desc": "Movie 1080p"
+                    },
+                    {
+                        "id": 16,
+                        "cat": "Movies/HD",
+                        "desc": "Movie 1080i"
+                    },
+                    {
+                        "id": 9,
+                        "cat": "Movies/HD",
+                        "desc": "Movie 720p"
+                    },
+                    {
+                        "id": 27,
+                        "cat": "Movies/SD",
+                        "desc": "iPad Video"
+                    },
+                    {
+                        "id": 410,
+                        "cat": "Movies/UHD",
+                        "desc": "4K UltraHD"
+                    }
+                ],
+                "tv": [
+                    {
+                        "id": 13,
+                        "cat": "TV",
+                        "desc": "EU/US TV series"
+                    },
+                    {
+                        "id": 25,
+                        "cat": "TV",
+                        "desc": "Chinese TV series"
+                    },
+                    {
+                        "id": 26,
+                        "cat": "TV",
+                        "desc": "Kor Drama"
+                    },
+                    {
+                        "id": 24,
+                        "cat": "TV",
+                        "desc": "Jpn Drama"
+                    },
+                    {
+                        "id": 21,
+                        "cat": "TV",
+                        "desc": "EU/US TV series pack"
+                    },
+                    {
+                        "id": 22,
+                        "cat": "TV",
+                        "desc": "Chinese TV series pack"
+                    },
+                    {
+                        "id": 23,
+                        "cat": "TV",
+                        "desc": "JPN/KOR drama pack"
+                    },
+                    {
+                        "id": 5,
+                        "cat": "TV/Documentary",
+                        "desc": "Documentary"
+                    },
+                    {
+                        "id": 14,
+                        "cat": "TV/Anime",
+                        "desc": "Animation"
+                    },
+                    {
+                        "id": 401,
+                        "cat": "TV",
+                        "desc": "TV Shows"
+                    }
+                ]
             }
         },
         {

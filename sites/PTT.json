@@ -84,7 +84,7 @@
             },
             "title_optional": {
                 "optional": true,
-                "selector": "a[title][href*=\"details.php?id=\"]",
+                "selector": "a[title][href*=\"details.php?id=\font title\"]",
                 "attribute": "title"
             },
             "title": {

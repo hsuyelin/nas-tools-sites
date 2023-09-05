@@ -1,7 +1,7 @@
 {
 	"id": "pthome",
 	"name": "\u94C2\u91D1\u5BB6",
-	"domain": "https://www.pthome.net/",
+	"domain": "https://pthome.net/",
 	"encoding": "UTF-8",
 	"public": false,
 	"search": {
@@ -21,24 +21,24 @@
 		"movie": [{
 			"id": 401,
 			"cat": "Movies",
-			"desc": "Movies/\u7535\u5F71"
+			"desc": "Movies(\u7535\u5F71)"
 		}],
 		"tv": [{
 			"id": 404,
 			"cat": "TV/Documentary",
-			"desc": "Documentaries/\u7EAA\u5F55\u7247"
+			"desc": "Documentaries(\u8BB0\u5F55\u7247)"
 		}, {
 			"id": 405,
 			"cat": "TV/Anime",
-			"desc": "Animations/\u52A8\u6F2B"
+			"desc": "Animations(\u52A8\u6F2B)"
 		}, {
 			"id": 402,
 			"cat": "TV",
-			"desc": "TV Series/\u8FDE\u7EED\u5267"
+			"desc": "TV Series(\u7535\u89C6\u5267)"
 		}, {
 			"id": 403,
-			"cat": "TV",
-			"desc": "TV Shows/\u7EFC\u827A"
+			"cat": "TV/Other",
+			"desc": "TV Shows(\u7EFC\u827A)"
 		}]
 	},
 	"torrents": {
@@ -77,32 +77,28 @@
 				"selector": "a[href*=\"details.php?id=\"]",
 				"attribute": "href"
 			},
-			"poster": {
-				"selector": "img[data-orig]",
-				"attribute": "data-orig"
-			},
 			"download": {
 				"selector": "a[href*=\"download.php?id=\"]",
 				"attribute": "href"
 			},
 			"size": {
-				"selector": "td.rowfollow:nth-child(5)"
+				"selector": "td:nth-child(5)"
 			},
 			"grabs": {
-				"selector": "td.rowfollow:nth-child(8)"
+				"selector": "td:nth-child(8)"
 			},
 			"seeders": {
-				"selector": "td.rowfollow:nth-child(6)"
+				"selector": "td:nth-child(6)"
 			},
 			"leechers": {
-				"selector": "td.rowfollow:nth-child(7)"
+				"selector": "td:nth-child(7)"
 			},
 			"date_elapsed": {
-				"selector": "td.rowfollow:nth-child(4) > span",
+				"selector": "td:nth-child(4) > span",
 				"optional": true
 			},
 			"date_added": {
-				"selector": "td.rowfollow:nth-child(4) > span",
+				"selector": "td:nth-child(4) > span",
 				"attribute": "title",
 				"optional": true
 			},
@@ -134,30 +130,23 @@
 			"free_deadline": {
 				"default_value": "{% if fields['downloadvolumefactor']==0 %}{{max_time}}{% endif%}",
 				"default_value_format": "%Y-%m-%d %H:%M:%S.%f",
-				"selector": "div > b > span[title]",
+				"selector": "td[class=\"embedded\"] > b > span[title]",
 				"attribute": "title",
 				"filters": [{
 					"name": "dateparse",
 					"args": "%Y-%m-%d %H:%M:%S"
 				}]
 			},
-			"tags": {
-				"selector": "div > a.torrents-tag"
-			},
-			"subject": {
-				"selector": "td.embedded:nth-child(2) > div > div:nth-child(2) > span",
-				"contents": -1
-			},
 			"description": {
-				"selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1)",
-				"remove": "span,a,img,font,b",
-				"contents": -1
+				"selector": "table.torrentname > tr > td.embedded > span[style]",
+				"index": -1
 			},
 			"labels": {
-				"selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
+				"selector": "table.torrentname > tr > td.embedded > span.tags"
 			}
 		}
-	},
+	}
+},
 	"price": {
 		"FREE": ["//h1[@id='top']/b/font[@class='free']"],
 		"2XFREE": ["//h1[@id='top']/b/font[@class='twoupfree']"],

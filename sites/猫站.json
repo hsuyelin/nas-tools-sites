@@ -12,44 +12,19 @@
             }
         ],
         "params": {
-            "search": "{keyword}"
+            "search": "{keyword}",
+            "search_area": 4
         },
         "batch": {
             "delimiter": " ",
             "space_replace": "_"
         }
     },
-    "category": {
-        "movie": [
-            {
-                "id": 401,
-                "cat": "Movies",
-                "desc": "\u7535\u5f71 (Movie)"
-            }
-        ],
-        "tv": [
-            {
-                "id": 404,
-                "cat": "TV",
-                "desc": "\u7535\u89c6\u5267 (TV Play)"
-            },
-            {
-                "id": 403,
-                "cat": "TV/Anime",
-                "desc": "\u52a8\u6f2b (Anime)"
-            },
-            {
-                "id": 405,
-                "cat": "TV",
-                "desc": "\u7efc\u827a (TV Show)"
-            },
-            {
-                "id": 402,
-                "cat": "TV/Documentary",
-                "desc": "\u7eaa\u5f55\u7247 (Documentary)"
-            }
-        ]
+    "batch": {
+        "delimiter": " ",
+        "space_replace": "_"
     },
+    "browse": {},
     "torrents": {
         "list": {
             "selector": "table.torrents > tr:has(\"table.torrentname\")"
@@ -160,6 +135,47 @@
                 "selector": "td:nth-child(2) > div > div:nth-child(2) > a.torrents-tag"
             }
         }
+    },
+    "category": {
+        "movie": [
+            {
+                "id": 401,
+                "cat": "Movies",
+                "desc": "\u7535\u5f71 (Movie)"
+            },
+            {
+                "id": 403,
+                "cat": "Anime",
+                "desc": "\u52a8\u6f2b (Anime)"
+            },
+            {
+                "id": 402,
+                "cat": "Documentary",
+                "desc": "\u7eaa\u5f55\u7247 (Documentary)"
+            }
+        ],
+        "tv": [
+            {
+                "id": 404,
+                "cat": "TV",
+                "desc": "\u7535\u89c6\u5267 (TV Play)"
+            },
+            {
+                "id": 403,
+                "cat": "Anime",
+                "desc": "\u52a8\u6f2b (Anime)"
+            },
+            {
+                "id": 405,
+                "cat": "TV",
+                "desc": "\u7efc\u827a (TV Show)"
+            },
+            {
+                "id": 402,
+                "cat": "Documentary",
+                "desc": "\u7eaa\u5f55\u7247 (Documentary)"
+            }
+        ]
     },
     "conf": {
         "FREE": [

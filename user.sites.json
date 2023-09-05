@@ -1,5 +1,5 @@
 {
-    "version": "202309031910",
+    "version": "202309051427",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -7799,44 +7799,19 @@
                     }
                 ],
                 "params": {
-                    "search": "{keyword}"
+                    "search": "{keyword}",
+                    "search_area": 4
                 },
                 "batch": {
                     "delimiter": " ",
                     "space_replace": "_"
                 }
             },
-            "category": {
-                "movie": [
-                    {
-                        "id": 401,
-                        "cat": "Movies",
-                        "desc": "\u7535\u5f71 (Movie)"
-                    }
-                ],
-                "tv": [
-                    {
-                        "id": 404,
-                        "cat": "TV",
-                        "desc": "\u7535\u89c6\u5267 (TV Play)"
-                    },
-                    {
-                        "id": 403,
-                        "cat": "TV/Anime",
-                        "desc": "\u52a8\u6f2b (Anime)"
-                    },
-                    {
-                        "id": 405,
-                        "cat": "TV",
-                        "desc": "\u7efc\u827a (TV Show)"
-                    },
-                    {
-                        "id": 402,
-                        "cat": "TV/Documentary",
-                        "desc": "\u7eaa\u5f55\u7247 (Documentary)"
-                    }
-                ]
+            "batch": {
+                "delimiter": " ",
+                "space_replace": "_"
             },
+            "browse": {},
             "torrents": {
                 "list": {
                     "selector": "table.torrents > tr:has(\"table.torrentname\")"
@@ -7947,6 +7922,47 @@
                         "selector": "td:nth-child(2) > div > div:nth-child(2) > a.torrents-tag"
                     }
                 }
+            },
+            "category": {
+                "movie": [
+                    {
+                        "id": 401,
+                        "cat": "Movies",
+                        "desc": "\u7535\u5f71 (Movie)"
+                    },
+                    {
+                        "id": 403,
+                        "cat": "Anime",
+                        "desc": "\u52a8\u6f2b (Anime)"
+                    },
+                    {
+                        "id": 402,
+                        "cat": "Documentary",
+                        "desc": "\u7eaa\u5f55\u7247 (Documentary)"
+                    }
+                ],
+                "tv": [
+                    {
+                        "id": 404,
+                        "cat": "TV",
+                        "desc": "\u7535\u89c6\u5267 (TV Play)"
+                    },
+                    {
+                        "id": 403,
+                        "cat": "Anime",
+                        "desc": "\u52a8\u6f2b (Anime)"
+                    },
+                    {
+                        "id": 405,
+                        "cat": "TV",
+                        "desc": "\u7efc\u827a (TV Show)"
+                    },
+                    {
+                        "id": 402,
+                        "cat": "Documentary",
+                        "desc": "\u7eaa\u5f55\u7247 (Documentary)"
+                    }
+                ]
             }
         },
         {
@@ -9729,117 +9745,11 @@
                     "space_replace": "_"
                 }
             },
-            "category": {
-                "movie": [
-                    {
-                        "id": 9,
-                        "cat": "Movies/Other",
-                        "desc": "U2-Rip"
-                    },
-                    {
-                        "id": 411,
-                        "cat": "Movies/Other",
-                        "desc": "U2-RBD"
-                    },
-                    {
-                        "id": 413,
-                        "cat": "Movies/Other",
-                        "desc": "Web"
-                    },
-                    {
-                        "id": 12,
-                        "cat": "Movies/HD",
-                        "desc": "BDRip"
-                    },
-                    {
-                        "id": 13,
-                        "cat": "Movies/Other",
-                        "desc": "DVDRip"
-                    },
-                    {
-                        "id": 14,
-                        "cat": "Movies/Other",
-                        "desc": "HDTVRip"
-                    },
-                    {
-                        "id": 15,
-                        "cat": "Movies/Other",
-                        "desc": "DVDISO"
-                    },
-                    {
-                        "id": 16,
-                        "cat": "Movies/BluRay",
-                        "desc": "BDMV"
-                    },
-                    {
-                        "id": 17,
-                        "cat": "Movies/Other",
-                        "desc": "LQRip"
-                    },
-                    {
-                        "id": 412,
-                        "cat": "Movies/BluRay",
-                        "desc": "\u52a0\u6d41\u91cd\u704c (Modded Blu-rays)"
-                    }
-                ],
-                "tv": [
-                    {
-                        "id": 9,
-                        "cat": "TV/Anime",
-                        "desc": "U2-Rip"
-                    },
-                    {
-                        "id": 411,
-                        "cat": "TV/Anime",
-                        "desc": "U2-RBD"
-                    },
-                    {
-                        "id": 413,
-                        "cat": "TV/Anime",
-                        "desc": "Web"
-                    },
-                    {
-                        "id": 12,
-                        "cat": "TV/Anime",
-                        "desc": "BDRip"
-                    },
-                    {
-                        "id": 13,
-                        "cat": "TV/Anime",
-                        "desc": "DVDRip"
-                    },
-                    {
-                        "id": 14,
-                        "cat": "TV/Anime",
-                        "desc": "HDTVRip"
-                    },
-                    {
-                        "id": 15,
-                        "cat": "TV/Anime",
-                        "desc": "DVDISO"
-                    },
-                    {
-                        "id": 16,
-                        "cat": "TV/Anime",
-                        "desc": "BDMV"
-                    },
-                    {
-                        "id": 17,
-                        "cat": "TV/Anime",
-                        "desc": "LQRip"
-                    },
-                    {
-                        "id": 410,
-                        "cat": "TV/Anime",
-                        "desc": "\u5916\u6302\u7ed3\u6784 (TV Series)"
-                    },
-                    {
-                        "id": 412,
-                        "cat": "TV/Anime",
-                        "desc": "\u52a0\u6d41\u91cd\u704c (Modded Blu-rays)"
-                    }
-                ]
+            "batch": {
+                "delimiter": " ",
+                "space_replace": "_"
             },
+            "browse": {},
             "torrents": {
                 "list": {
                     "selector": "table.torrents > tr:has(\"table.torrentname\")"
@@ -9976,6 +9886,117 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
+            },
+            "category": {
+                "movie": [
+                    {
+                        "id": 9,
+                        "cat": "Movies/Other",
+                        "desc": "U2-Rip"
+                    },
+                    {
+                        "id": 411,
+                        "cat": "Movies/Other",
+                        "desc": "U2-RBD"
+                    },
+                    {
+                        "id": 413,
+                        "cat": "Movies/Other",
+                        "desc": "Web"
+                    },
+                    {
+                        "id": 12,
+                        "cat": "Movies/HD",
+                        "desc": "BDRip"
+                    },
+                    {
+                        "id": 13,
+                        "cat": "Movies/Other",
+                        "desc": "DVDRip"
+                    },
+                    {
+                        "id": 14,
+                        "cat": "Movies/Other",
+                        "desc": "HDTVRip"
+                    },
+                    {
+                        "id": 15,
+                        "cat": "Movies/Other",
+                        "desc": "DVDISO"
+                    },
+                    {
+                        "id": 16,
+                        "cat": "Movies/BluRay",
+                        "desc": "BDMV"
+                    },
+                    {
+                        "id": 17,
+                        "cat": "Movies/Other",
+                        "desc": "LQRip"
+                    },
+                    {
+                        "id": 412,
+                        "cat": "Movies/BluRay",
+                        "desc": "\u52a0\u6d41\u91cd\u704c (Modded Blu-rays)"
+                    }
+                ],
+                "tv": [
+                    {
+                        "id": 9,
+                        "cat": "TV/Anime",
+                        "desc": "U2-Rip"
+                    },
+                    {
+                        "id": 411,
+                        "cat": "TV/Anime",
+                        "desc": "U2-RBD"
+                    },
+                    {
+                        "id": 413,
+                        "cat": "TV/Anime",
+                        "desc": "Web"
+                    },
+                    {
+                        "id": 12,
+                        "cat": "TV/Anime",
+                        "desc": "BDRip"
+                    },
+                    {
+                        "id": 13,
+                        "cat": "TV/Anime",
+                        "desc": "DVDRip"
+                    },
+                    {
+                        "id": 14,
+                        "cat": "TV/Anime",
+                        "desc": "HDTVRip"
+                    },
+                    {
+                        "id": 15,
+                        "cat": "TV/Anime",
+                        "desc": "DVDISO"
+                    },
+                    {
+                        "id": 16,
+                        "cat": "TV/Anime",
+                        "desc": "BDMV"
+                    },
+                    {
+                        "id": 17,
+                        "cat": "TV/Anime",
+                        "desc": "LQRip"
+                    },
+                    {
+                        "id": 410,
+                        "cat": "TV/Anime",
+                        "desc": "\u5916\u6302\u7ed3\u6784 (TV Series)"
+                    },
+                    {
+                        "id": 412,
+                        "cat": "TV/Anime",
+                        "desc": "\u52a0\u6d41\u91cd\u704c (Modded Blu-rays)"
+                    }
+                ]
             }
         },
         {

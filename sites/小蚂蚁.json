@@ -1,7 +1,7 @@
 {
     "id": "xiaomaoyi",
     "name": "\u5c0f\u8682\u8681",
-    "domain": "http://hdmayi.com/",
+    "domain": "https://hdmayi.com/",
     "encoding": "UTF-8",
     "public": false,
     "search": {
@@ -18,6 +18,10 @@
             "delimiter": " ",
             "space_replace": "_"
         }
+    },
+    "batch": {
+        "delimiter": " ",
+        "space_replace": "_"
     },
     "category": {
         "movie": [

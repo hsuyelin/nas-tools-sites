@@ -14,7 +14,7 @@
         ],
         "params": {
             "search": "{keyword}",
-            "search_area": 1
+            "search_area": 0
         },
         "batch": {
             "delimiter": " ",

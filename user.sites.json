@@ -1,5 +1,5 @@
 {
-    "version": "202309102011",
+    "version": "202309102015",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -6022,7 +6022,7 @@
                 ],
                 "params": {
                     "search": "{keyword}",
-                    "search_area": 1
+                    "search_area": 0
                 },
                 "batch": {
                     "delimiter": " ",
@@ -7800,7 +7800,7 @@
                 ],
                 "params": {
                     "search": "{keyword}",
-                    "search_area": 1
+                    "search_area": 0
                 },
                 "batch": {
                     "delimiter": " ",

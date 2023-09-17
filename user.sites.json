@@ -1,5 +1,5 @@
 {
-    "version": "202309172146",
+    "version": "202309172157",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -9163,12 +9163,17 @@
                     }
                 ],
                 "params": {
-                    "search": "{keyword}"
+                    "search": "{keyword}",
+                    "allsec": true
                 },
                 "batch": {
                     "delimiter": " ",
                     "space_replace": "_"
                 }
+            },
+            "batch": {
+                "delimiter": " ",
+                "space_replace": "_"
             },
             "category": {
                 "movie": [
@@ -9375,27 +9380,24 @@
                             }
                         ]
                     },
+                    "tags": {
+                        "selector": "div > a.torrents-tag"
+                    },
+                    "subject": {
+                        "selector": "td.embedded:nth-child(2) > div > div:nth-child(2) > span",
+                        "contents": -1
+                    },
                     "description": {
-                        "selector": "td:nth-child(2) > table > tr > td.embedded > span[style]",
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
+                        "remove": "span,a,img,font,b",
                         "contents": -1
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table > tr > td.embedded > span.tags"
-                    },
-                    "minimumratio": {
-                        "case": {
-                            "img.hitandrun": 1,
-                            "*": 0
-                        }
-                    },
-                    "minimumseedtime": {
-                        "case": {
-                            "img.hitandrun": 86400,
-                            "*": 0
-                        }
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     }
                 }
-            }
+            },
+            "system_type": ""
         },
         {
             "id": "gaoqingdubi",
@@ -16909,17 +16911,11 @@
         },
         "rousi.zip": {
             "FREE": [
-                "//h1[@id='top']/b/font[@class='free']"
+                "//h1[@id='top']/b/font[@class='pro_free']"
             ],
-            "2XFREE": [
-                "//h1[@id='top']/b/font[@class='twoupfree']"
-            ],
-            "HR": [
-                "//h1[@id='top']/img[@class='hitandrun']"
-            ],
-            "PEER_COUNT": [
-                "//div[@id='peercount']/b[1]"
-            ]
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
         },
         "www.hddolby.com": {
             "FREE": [

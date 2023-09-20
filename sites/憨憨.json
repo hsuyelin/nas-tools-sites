@@ -167,10 +167,10 @@
     },
     "conf": {
         "FREE": [
-            "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-free']"
+            "//span[@class='promotion-tag-free']"
         ],
         "2XFREE": [
-            "//div[@class='whitespace-nowrap']/span[@class='promotion-tag-2xfree']"
+            "//span[@class='promotion-tag-2xfree']"
         ],
         "HR": [
             "//span[contains(text(), 'H&R')]"

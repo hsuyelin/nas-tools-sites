@@ -169,25 +169,22 @@
                 "contents": -1
             },
             "description": {
-                "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
-                "remove": "span,a,img,font,b",
-                "contents": -1
+                "selector": "td.embedded",
+                "remove": "span,a,img,font,b"
             },
             "labels": {
-                "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
+                "selector": "td.embedded > span[style]"
             }
         }
     },
     "conf": {
         "FREE": [
-            "//h1[@id='top']/b/font[@class='free']"
+            "//h1[@id='top']/b/font[@class='pro_free']"
         ],
         "2XFREE": [
-            "//h1[@id='top']/b/font[@class='twoupfree']"
+            "//h1[@id='top']/b/font[@class='pro_free2up']"
         ],
-        "HR": [
-            "//h1[@id='top']/img[@class='hitandrun']"
-        ],
+        "HR": [],
         "PEER_COUNT": [
             "//div[@id='peercount']/b[1]"
         ]

@@ -1,5 +1,5 @@
 {
-    "version": "202309221601",
+    "version": "202309221708",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -185,12 +185,11 @@
                         "contents": -1
                     },
                     "description": {
-                        "selector": "td:nth-child(2) > table.torrentname > td:has(\"a[href*='details.php?id=']\")",
-                        "remove": "span,a,img,font,b",
-                        "contents": -1
+                        "selector": "td:nth-child(2)",
+                        "remove": "span,a,img,font,b"
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table.torrentname > td:has(\"a[href*='details.php?id=']\") > span"
+                        "selector": "td:nth-child(2) > span[style]"
                     }
                 }
             }
@@ -2746,12 +2745,11 @@
                         ]
                     },
                     "description": {
-                        "selector": "table.torrentname > tbody > tr > td.embedded",
-                        "remove": "a,b,img,span",
-                        "contents": -1
+                        "selector": "td.embedded",
+                        "remove": "a,b,img,span"
                     },
                     "labels": {
-                        "selector": "table.torrentname > tbody > tr > td.embedded > span"
+                        "selector": "td.embedded > span[style]"
                     },
                     "minimumratio": {
                         "text": 1
@@ -4834,12 +4832,11 @@
                         "contents": -1
                     },
                     "description": {
-                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
-                        "remove": "span,a,img,font,b",
-                        "contents": -1
+                        "selector": "td.embedded",
+                        "remove": "span,a,img,font,b"
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
+                        "selector": "td.embedded > span[style]"
                     }
                 }
             }
@@ -16406,14 +16403,12 @@
     "conf": {
         "piggo.me": {
             "FREE": [
-                "//h1[@id='top']/b/font[@class='free']"
+                "//h1[@id='top']/b/font[@class='pro_free']"
             ],
             "2XFREE": [
-                "//h1[@id='top']/b/font[@class='twoupfree']"
+                "//h1[@id='top']/b/font[@class='pro_free2up']"
             ],
-            "HR": [
-                "//h1[@id='top']/img[@class='hitandrun']"
-            ],
+            "HR": [],
             "PEER_COUNT": [
                 "//div[@id='peercount']/b[1]"
             ]
@@ -16642,14 +16637,12 @@
         },
         "ptcafe.club": {
             "FREE": [
-                "//h1[@id='top']/b/font[@class='free']"
+                "//h1[@id='top']/b/font[@class='pro_free']"
             ],
             "2XFREE": [
-                "//h1[@id='top']/b/font[@class='twoupfree']"
+                "//h1[@id='top']/b/font[@class='pro_free2up']"
             ],
-            "HR": [
-                "//h1[@id='top']/img[@class='hitandrun']"
-            ],
+            "HR": [],
             "PEER_COUNT": [
                 "//div[@id='peercount']/b[1]"
             ]

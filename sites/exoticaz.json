@@ -65,7 +65,7 @@
     },
     "torrents": {
         "list": {
-            "selector": "div.card.mt-2 &gt; div.card-body.p-2 &gt; div.table-responsive &gt; table &gt; tbody &gt; tr:has(i)"
+            "selector": "div.card.mt-2 > div.card-body.p-2 > div.table-responsive > table > tbody > tr:has(i)"
         },
         "fields": {
             "id": {
@@ -93,7 +93,7 @@
                 "text": "{% if fields['title_optional'] %}{{ fields['title_optional'] }}{% else %}{{ fields['title_default'] }}{% endif %}"
             },
             "category": {
-                "selector": "td:nth-child(1) &gt; i.fa.fa-video.category-icon[title]",
+                "selector": "td:nth-child(1) > i.fa.fa-video.category-icon[title]",
                 "attribute": "title"
             },
             "details": {

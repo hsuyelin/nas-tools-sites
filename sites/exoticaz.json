@@ -82,15 +82,15 @@
                 ]
             },
             "title_default": {
-                "selector": "a[href*=\"details.php?id=\"]"
+                "selector": "a[href*=\"/torrent/\"]"
             },
             "title_optional": {
                 "optional": true,
-                "selector": "a[title][href*=\"details.php?id=\"]",
+                "selector": "a[title][href*=\"/torrent/\"]",
                 "attribute": "title"
             },
             "title": {
-                "text": "a[href^=\"https://exoticaz.to/torrent/\"]"
+                "text": "{% if fields['title_optional'] %}{{ fields['title_optional'] }}{% else %}{{ fields['title_default'] }}{% endif %}"
             },
             "category": {
                 "selector": "td:nth-child(1) &gt; i.fa.fa-video.category-icon[title]",
@@ -160,10 +160,10 @@
     },
     "conf": {
         "FREE": [
-            "//td[@class='rowfollow']/img[@class='pro_free'][@alt='FREE']"
+            "//i[contains(@class, 'fa-star')]"
         ],
         "2XFREE": [
-            "//td[@class='rowfollow']/img[@class='pro_free2up'][@alt='2X Free']"
+            "//i[contains(@class, 'fa-star-half')]"
         ],
         "HR": [],
         "PEER_COUNT": []

@@ -190,12 +190,12 @@
                 ]
             },
             "description": {
-                "selector": "table.torrentname > tr > td:nth-child(2)",
+                "selector": "table.torrentname > tbody > tr > td.embedded",
                 "remove": "a,b,img,span",
                 "contents": -1
             },
             "labels": {
-                "selector": "table.torrentname > tr > td:nth-child(2) > span"
+                "selector": "table.torrentname > tbody > tr > td.embedded > span"
             },
             "minimumratio": {
                 "text": 1
@@ -212,7 +212,9 @@
         "2XFREE": [
             "//h1[@id='top']/b/font[@class='twoupfree']"
         ],
-        "HR": [],
+        "HR": [
+            "//h1[@id='top']/img[@class='hitandrun']"
+        ],
         "PEER_COUNT": [
             "//div[@id='peercount']/b[1]"
         ]

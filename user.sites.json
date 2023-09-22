@@ -1,5 +1,5 @@
 {
-    "version": "202309221601",
+    "version": "202309221643",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -2746,12 +2746,11 @@
                         ]
                     },
                     "description": {
-                        "selector": "table.torrentname > tbody > tr > td.embedded",
-                        "remove": "a,b,img,span",
-                        "contents": -1
+                        "selector": "td.embedded",
+                        "remove": "a,b,img,span"
                     },
                     "labels": {
-                        "selector": "table.torrentname > tbody > tr > td.embedded > span"
+                        "selector": "td.embedded > span[style]"
                     },
                     "minimumratio": {
                         "text": 1

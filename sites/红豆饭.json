@@ -158,8 +158,8 @@
                 ]
             },
             "description": {
-                "selector": "table.torrentname > tr > td:nth-child(2)",
-                "remove": "a,img,span",
+                "selector": "table.torrentname > tr > td:nth-child(1)",
+                "remove": "a,img,span,b,br",
                 "contents": -1
             },
             "labels": {

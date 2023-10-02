@@ -179,10 +179,10 @@
     },
     "conf": {
         "FREE": [
-            "//h1[@id='top']/b/font[@class='pro_free']"
+            "//h1[@id='top']/b/font[@class='free']"
         ],
         "2XFREE": [
-            "//h1[@id='top']/b/font[@class='pro_free2up']"
+            "//h1[@id='top']/b/font[@class='twoupfree']"
         ],
         "HR": [],
         "PEER_COUNT": [

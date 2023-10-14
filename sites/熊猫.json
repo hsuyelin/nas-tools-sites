@@ -200,11 +200,12 @@
                 ]
             },
             "description": {
-                "selector": "td:nth-child(2) > table > tr > td.embedded > span[style]",
+                "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
+                "remove": "span,a,img,font,b",
                 "contents": -1
             },
             "labels": {
-                "selector": "td:nth-child(2) > table > tr > td.embedded > span.tags"
+                "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
             },
             "minimumratio": {
                 "case": {

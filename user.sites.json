@@ -1,5 +1,5 @@
 {
-    "version": "202310111128",
+    "version": "202310181103",
     "indexer": [
         {
             "id": "zhuzhu",
@@ -1744,12 +1744,12 @@
                         "contents": -1
                     },
                     "description": {
-                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1)",
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
                         "remove": "span,a,img,font,b",
                         "contents": -1
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     }
                 }
             }
@@ -2121,6 +2121,82 @@
                     },
                     "labels": {
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
+                    }
+                }
+            }
+        },
+        {
+            "id": "u9a9",
+            "name": "u9a9",
+            "domain": "https://u9a9.de/",
+            "encoding": "UTF-8",
+            "public": true,
+            "proxy": true,
+            "search": {
+                "paths": [
+                    {
+                        "path": "?type=2&search={keyword}",
+                        "method": "get"
+                    }
+                ]
+            },
+            "browse": {
+                "path": "?type=2&p={page}",
+                "start": 1
+            },
+            "torrents": {
+                "list": {
+                    "selector": "table.torrent-list > tbody > tr"
+                },
+                "fields": {
+                    "id": {
+                        "selector": "a[href*=\"/view/2/\"]",
+                        "attribute": "href",
+                        "filters": [
+                            {
+                                "name": "re_search",
+                                "args": [
+                                    "\\d+",
+                                    0
+                                ]
+                            }
+                        ]
+                    },
+                    "title": {
+                        "selector": "td:nth-child(2) > a"
+                    },
+                    "details": {
+                        "selector": "td:nth-child(2) > a",
+                        "attribute": "href"
+                    },
+                    "download": {
+                        "selector": "td:nth-child(3) > a[href*=\"magnet:\"]",
+                        "attribute": "href"
+                    },
+                    "date_added": {
+                        "selector": "td:nth-child(5)"
+                    },
+                    "size": {
+                        "selector": "td:nth-child(4)"
+                    },
+                    "seeders": {
+                        "selector": "td:nth-child(6)"
+                    },
+                    "leechers": {
+                        "selector": "td:nth-child(7)"
+                    },
+                    "grabs": {
+                        "selector": "td:nth-child(8)"
+                    },
+                    "downloadvolumefactor": {
+                        "case": {
+                            "*": 0
+                        }
+                    },
+                    "uploadvolumefactor": {
+                        "case": {
+                            "*": 1
+                        }
                     }
                 }
             }
@@ -11810,11 +11886,12 @@
                         ]
                     },
                     "description": {
-                        "selector": "td:nth-child(2) > table > tr > td.embedded > span[style]",
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2)",
+                        "remove": "span,a,img,font,b",
                         "contents": -1
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table > tr > td.embedded > span.tags"
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     },
                     "minimumratio": {
                         "case": {
@@ -14858,7 +14935,7 @@
                         "contents": -1
                     },
                     "labels": {
-                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
+                        "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     }
                 }
             }

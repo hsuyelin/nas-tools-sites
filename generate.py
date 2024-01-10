@@ -3,6 +3,8 @@ import json
 import base64
 from datetime import datetime
 from urllib.parse import urlparse
+import shutil
+from zipfile import ZipFile
 
 def get_netloc(url):
     """
@@ -85,6 +87,25 @@ def create_or_clear_sites_file(sites_dat_path):
     with open(sites_dat_path, mode):
         pass
 
+def compress_folder(folder_path, output_zip_name):
+    """
+    压缩指定文件夹并保存到当前目录下
+    """
+    if os.path.exists(output_zip_name):
+        os.remove(output_zip_name)
+
+    with ZipFile(output_zip_name, 'w') as zipf:
+        for root, dirs, files in os.walk(folder_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                zipf.write(file_path, os.path.relpath(file_path, folder_path))
+
+def extract_archive(archive_path, output_folder):
+    """
+    解压缩指定的压缩包到指定的文件夹
+    """
+    shutil.unpack_archive(archive_path, output_folder)
+
 if __name__ == "__main__":
     # 格式化sites目录下的json文件
     format_json_files_in_folder("sites")
@@ -99,3 +120,9 @@ if __name__ == "__main__":
     
     # 将json文件转为dat文件
     save_json_to_dat("user.sites.pack.json", "user.sites.bin")
+
+    # 将sites目录压缩后保存
+    compress_folder("sites", "user.sites.jsons.zip")
+
+    # # 测试将user.sites.jsons.zip解压缩到jsons文件夹
+    # extract_archive("user.sites.jsons.zip", "jsons")

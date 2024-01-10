@@ -100,6 +100,18 @@ def compress_folder(folder_path, output_zip_name):
                 file_path = os.path.join(root, file)
                 zipf.write(file_path, os.path.relpath(file_path, folder_path))
 
+def gather_json_files(input_folder, output_file_path, url_prefix):
+    if os.path.exists(output_file_path):
+        os.remove(output_file_path)
+
+    for filename in os.listdir(input_folder):
+        if not filename.endswith(".json"):
+            continue
+
+        json_file_path = os.path.join(input_folder, filename)
+        with open(output_file_path, 'a', encoding='utf-8') as output_file:
+            output_file.write(f"{url_prefix}/{json_file_path}\n")
+
 def extract_archive(archive_path, output_folder):
     """
     解压缩指定的压缩包到指定的文件夹
@@ -124,5 +136,5 @@ if __name__ == "__main__":
     # 将sites目录压缩后保存
     compress_folder("sites", "user.sites.jsons.zip")
 
-    # # 测试将user.sites.jsons.zip解压缩到jsons文件夹
-    # extract_archive("user.sites.jsons.zip", "jsons")
+    # 写入所有的json文件地址到文件中
+    gather_json_files("sites", "user.sites.jsons.txt", "https://raw.githubusercontent.com/hsuyelin/nas-tools-sites/master")

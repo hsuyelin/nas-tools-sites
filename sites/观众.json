@@ -113,11 +113,11 @@
                 ]
             },
             "date_elapsed": {
-                "selector": "td:nth-child(4) > span",
+                "selector": "td:nth-child(3) > span",
                 "optional": true
             },
             "date_added": {
-                "selector": "td:nth-child(4) > span",
+                "selector": "td:nth-child(3) > span",
                 "attribute": "title",
                 "optional": true
             },
@@ -131,16 +131,16 @@
                 ]
             },
             "size": {
-                "selector": "td:nth-child(5)"
+                "selector": "td:nth-child(4)"
             },
             "seeders": {
-                "selector": "td:nth-child(6)"
+                "selector": "td:nth-child(5)"
             },
             "leechers": {
-                "selector": "td:nth-child(7)"
+                "selector": "td:nth-child(6)"
             },
             "grabs": {
-                "selector": "td:nth-child(8)"
+                "selector": "td:nth-child(7)"
             },
             "downloadvolumefactor": {
                 "case": {

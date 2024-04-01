@@ -1,18 +1,24 @@
 {
-    "id": "mteam-xpio",
-    "name": "\u9992\u5934(XPIO)",
+    "id": "mteam",
+    "name": "\u9992\u5934",
     "domain": "https://xp.m-team.io/",
     "encoding": "UTF-8",
     "public": false,
+    "parser": "MteamSpider",
     "search": {
         "paths": [
             {
-                "path": "torrents.php",
-                "method": "get"
+                "path": "/api/torrent/search",
+                "method": "post"
             }
         ],
         "params": {
-            "search": "{keyword}"
+            "mode": "normal",
+            "categories": [],
+            "visible": 1,
+            "keyword": "{keyword}",
+            "pageNumber": 1,
+            "pageSize": 100
         }
     },
     "category": {

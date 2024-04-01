@@ -1,18 +1,24 @@
 {
-    "id": "mteam-kpcc",
-    "name": "\u9992\u5934(KPCC)",
+    "id": "mteam",
+    "name": "\u9992\u5934",
     "domain": "https://kp.m-team.cc/",
     "encoding": "UTF-8",
     "public": false,
+    "parser": "MteamSpider",
     "search": {
         "paths": [
             {
-                "path": "torrents.php",
-                "method": "get"
+                "path": "/api/torrent/search",
+                "method": "post"
             }
         ],
         "params": {
-            "search": "{keyword}"
+            "mode": "normal",
+            "categories": [],
+            "visible": 1,
+            "keyword": "{keyword}",
+            "pageNumber": 1,
+            "pageSize": 100
         }
     },
     "category": {

@@ -1,7 +1,7 @@
 {
-    "version": "202402180851",
-    "indexer": {
-        "piggo.me": {
+    "version": "202402180850",
+    "indexer": [
+        {
             "id": "zhuzhu",
             "name": "\u732a\u732a",
             "domain": "https://piggo.me/",
@@ -192,21 +192,9 @@
                         "selector": "td:nth-child(2) > span[style]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='pro_free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='pro_free2up']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pt.hdbd.us": {
+        {
             "id": "yidianyuan",
             "name": "\u4f0a\u7538\u56ed",
             "domain": "https://pt.hdbd.us/",
@@ -361,7 +349,7 @@
                 }
             }
         },
-        "pt.soulvoice.club": {
+        {
             "id": "lingyin",
             "name": "\u8046\u97f3",
             "domain": "https://pt.soulvoice.club/",
@@ -568,21 +556,9 @@
                         "selector": "table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [
-                    "//img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pt.hd4fans.org": {
+        {
             "id": "shouzhan",
             "name": "\u517d\u7ad9",
             "domain": "https://pt.hd4fans.org/",
@@ -778,7 +754,7 @@
                 }
             }
         },
-        "sz.chddiy.xyz": {
+        {
             "id": "caihongdaobeiyong",
             "name": "\u5f69\u8679\u5c9b\u5907\u7528\u7ad9",
             "domain": "https://sz.chddiy.xyz/",
@@ -965,21 +941,9 @@
                         "selector": "font.subtitle > div[style] > div.tag"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/img[@class='pro_free']"
-                ],
-                "2XFREE": [],
-                "HR": [
-                    "//b[contains(text(),'H&R:')]"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "52pt.site": {
+        {
             "id": "52PT",
             "name": "52PT",
             "domain": "https://52pt.site/",
@@ -1176,21 +1140,9 @@
                         "text": 90000
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "exoticaz.to": {
+        {
             "id": "exoticaz",
             "name": "exoticaz",
             "domain": "https://exoticaz.to/",
@@ -1349,19 +1301,9 @@
                         "text": 2073600
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//i[contains(@class, 'fa-star')]"
-                ],
-                "2XFREE": [
-                    "//i[contains(@class, 'fa-star-half')]"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "dajiao.cyou": {
+        {
             "id": "dajiao",
             "name": "\u6253\u80f6",
             "domain": "https://dajiao.cyou/",
@@ -1540,23 +1482,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "kufei.org": {
+        {
             "id": "kufei",
             "name": "\u5e93\u975e",
             "builtin": true,
@@ -1746,21 +1674,9 @@
                         "default": true
                     }
                 ]
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "dmhy.org": {
+        {
             "id": "dmhy",
             "name": "\u52a8\u6f2b\u82b1\u56ed",
             "domain": "https://dmhy.org/",
@@ -1846,7 +1762,7 @@
                 }
             }
         },
-        "www.okpt.net": {
+        {
             "id": "OK",
             "name": "OK",
             "domain": "https://www.okpt.net/",
@@ -2025,23 +1941,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span[title=\"\"]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "xp.m-team.cc": {
+        {
             "id": "mteam-xpcc",
             "name": "\u9992\u5934(Porn)",
             "domain": "https://xp.m-team.cc/",
@@ -2245,19 +2147,9 @@
                         "attribute": "alt"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.hitpt.com": {
+        {
             "id": "baichuan",
             "name": "\u767e\u5ddd",
             "domain": "https://www.hitpt.com/",
@@ -2422,7 +2314,7 @@
                 }
             }
         },
-        "u9a9.de": {
+        {
             "id": "u9a9",
             "name": "u9a9",
             "domain": "https://u9a9.de/",
@@ -2498,7 +2390,7 @@
                 }
             }
         },
-        "hdvideo.one": {
+        {
             "id": "gaoqingshipin",
             "name": "\u9ad8\u6e05\u89c6\u9891",
             "domain": "https://hdvideo.one/",
@@ -2677,21 +2569,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "ptchdbits.co": {
+        {
             "id": "caihongdao",
             "name": "\u5f69\u8679\u5c9b",
             "domain": "https://ptchdbits.co/",
@@ -2878,21 +2758,9 @@
                         "selector": "font.subtitle > div[style] > div.tag"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/img[@class='pro_free']"
-                ],
-                "2XFREE": [],
-                "HR": [
-                    "//b[contains(text(),'H&R:')]"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "mikanime.tv": {
+        {
             "id": "mikanani",
             "name": "\u871c\u67d1",
             "domain": "https://mikanime.tv/",
@@ -2950,7 +2818,7 @@
                 }
             }
         },
-        "www.icc2022.com": {
+        {
             "id": "bingqilin",
             "name": "\u51b0\u6dc7\u6dcb",
             "domain": "https://www.icc2022.com/",
@@ -3155,23 +3023,9 @@
                         "text": 90000
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "hdfun.me": {
+        {
             "id": "gaoqingkongjian",
             "name": "\u9ad8\u6e05\u7a7a\u95f4",
             "domain": "http://hdfun.me/",
@@ -3550,21 +3404,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "ptchina.org": {
+        {
             "id": "bojinxueyuan",
             "name": "\u94c2\u91d1\u5b66\u9662",
             "domain": "https://ptchina.org/",
@@ -3733,19 +3575,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "kp.m-team.cc": {
+        {
             "id": "mteam-kpcc",
             "name": "\u9992\u5934(KPCC)",
             "domain": "https://kp.m-team.cc/",
@@ -3981,19 +3813,9 @@
                         "attribute": "alt"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "nyaa.si": {
+        {
             "id": "NYAA",
             "name": "NYAA",
             "domain": "https://nyaa.si/",
@@ -4069,7 +3891,7 @@
                 }
             }
         },
-        "xingtan.one": {
+        {
             "id": "xingtan",
             "name": "\u674f\u575b",
             "domain": "https://xingtan.one/",
@@ -4248,23 +4070,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "skyeysnow.com": {
+        {
             "id": "skyeysnow",
             "name": "\u5929\u96ea(skyeysnow)",
             "domain": "https://skyeysnow.com/",
@@ -4348,17 +4156,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//div[@class='pi']/b[contains(text(),'FREE')]"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "www.beitai.pt": {
+        {
             "id": "beitai",
             "name": "\u5907\u80ce",
             "domain": "https://www.beitai.pt/",
@@ -4549,21 +4349,9 @@
                         "contents": -1
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "hudbt.hust.edu.cn": {
+        {
             "id": "butterfly",
             "name": "\u8774\u8776",
             "domain": "https://hudbt.hust.edu.cn/",
@@ -4710,7 +4498,7 @@
             },
             "category": {}
         },
-        "jptv.club": {
+        {
             "id": "JPTV",
             "name": "JPTV",
             "domain": "https://jptv.club/",
@@ -4793,19 +4581,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//span/i[@class='fas fa-star text-gold']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//span[@class='badge-extra text-green']"
-                ]
             }
         },
-        "azusa.wiki": {
+        {
             "id": "zimiao",
             "name": "\u6893\u55b5",
             "domain": "https://azusa.wiki/",
@@ -4996,19 +4774,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "pt.0ff.cc": {
+        {
             "id": "ziyounongchang",
             "name": "\u81ea\u7531\u519c\u573a",
             "domain": "https://pt.0ff.cc/",
@@ -5156,23 +4924,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "ptcafe.club": {
+        {
             "id": "coffee",
             "name": "\u5496\u5561",
             "domain": "https://ptcafe.club",
@@ -5350,21 +5104,9 @@
                         "selector": "td.embedded > span[style]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "hdchina.org": {
+        {
             "id": "ciqi",
             "name": "\u74f7\u5668",
             "domain": "https://hdchina.org/",
@@ -5583,22 +5325,9 @@
                         "desc": "TV Shows"
                     }
                 ]
-            },
-            "conf": {
-                "RENDER": true,
-                "FREE": [
-                    "//h2[@id='top']/img[@class='pro_free']"
-                ],
-                "2XFREE": [
-                    "//h2[@id='top']/img[@class='pro_free2up']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.comicat.org": {
+        {
             "id": "comicat",
             "name": "\u6f2b\u55b5",
             "domain": "https://www.comicat.org",
@@ -5675,7 +5404,7 @@
                 }
             }
         },
-        "ultrahd.net": {
+        {
             "id": "UltraHD",
             "name": "UltraHD",
             "domain": "https://ultrahd.net/",
@@ -5848,7 +5577,7 @@
                 }
             }
         },
-        "ptsbao.club": {
+        {
             "id": "shaobaoleyuan",
             "name": "\u70e7\u5305\u4e50\u56ed",
             "domain": "https://ptsbao.club/",
@@ -6015,21 +5744,9 @@
                         "selector": "table.torrentname > td > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "fsm.name": {
+        {
             "id": "feitianlamian",
             "name": "\u98de\u5929\u62c9\u9762",
             "builtin": true,
@@ -6171,17 +5888,9 @@
                         "text": 90000
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//span[@class='badge bg-primary']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "hdfans.org": {
+        {
             "id": "hdfans",
             "name": "\u7ea2\u8c46\u996d",
             "domain": "https://hdfans.org/",
@@ -6350,21 +6059,9 @@
                     }
                 }
             },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
-            },
             "system_type": ""
         },
-        "pt.sjtu.edu.cn": {
+        {
             "id": "putao",
             "name": "\u8461\u8404",
             "domain": "https://pt.sjtu.edu.cn/",
@@ -6569,17 +6266,9 @@
                         "selector": "table.torrentname > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "star-space.net": {
+        {
             "id": "startspace",
             "name": "\u661f\u7a7a",
             "domain": "https://star-space.net/",
@@ -6758,23 +6447,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span[title=\"\"]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "hhanclub.top": {
+        {
             "id": "hanhan",
             "name": "\u61a8\u61a8",
             "encoding": "UTF-8",
@@ -6940,23 +6615,9 @@
                         "desc": "TV Shows/\u7efc\u827a"
                     }
                 ]
-            },
-            "conf": {
-                "FREE": [
-                    "//span[@class='promotion-tag promotion-tag-free']"
-                ],
-                "2XFREE": [
-                    "//span[@class='promotion-tag promotion-tag-2xfree']"
-                ],
-                "HR": [
-                    "//span[contains(text(), 'H&R')]"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='seeder-count']"
-                ]
             }
         },
-        "hdatmos.club": {
+        {
             "id": "atongmu",
             "name": "\u963f\u7ae5\u6728",
             "domain": "https://hdatmos.club/",
@@ -7141,21 +6802,9 @@
                         "contents": -1
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "totheglory.im": {
+        {
             "id": "TTG",
             "name": "TTG",
             "domain": "https://totheglory.im/",
@@ -7419,21 +7068,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//img[@class='topic'][contains(@src,'ico_free.gif')]"
-                ],
-                "2XFREE": [],
-                "HR": [
-                    "//img[@src='/pic/hit_run.gif']"
-                ],
-                "PEER_COUNT": [
-                    "//span[@id='dlstatus']"
-                ]
             }
         },
-        "wintersakura.net": {
+        {
             "id": "dongying",
             "name": "\u51ac\u6a31",
             "domain": "https://wintersakura.net/",
@@ -7632,19 +7269,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "club.hares.top": {
+        {
             "id": "baitu",
             "name": "\u767d\u5154",
             "domain": "https://club.hares.top/",
@@ -7793,19 +7420,9 @@
                         "selector": "div.layui-torrents-Subject > div.left > p.layui-elip.layui-torrents-descr-width > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//b[@class='free'][text()='\u514d\u8d39']"
-                ],
-                "2XFREE": [
-                    "//b[@class='twoupfree'][text()='2X\u514d\u8d39']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "hdarea.club": {
+        {
             "id": "gaoqingshijie",
             "name": "\u9ad8\u6e05\u89c6\u754c",
             "domain": "https://hdarea.club/",
@@ -8041,21 +7658,9 @@
                         "contents": -1
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.pttime.org": {
+        {
             "id": "PTT",
             "name": "PTT",
             "domain": "https://www.pttime.org/",
@@ -8285,22 +7890,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > a > span.tags"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']",
-                    "//h1[@id='top']/b/font[@class='zeroupzerodown']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.htpt.cc": {
+        {
             "id": "haitang",
             "name": "\u6d77\u68e0",
             "domain": "https://www.htpt.cc/",
@@ -8463,19 +8055,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "audiences.me": {
+        {
             "id": "audiences",
             "name": "\u89c2\u4f17",
             "domain": "https://audiences.me/",
@@ -8663,23 +8245,9 @@
                         "selector": "td.embedded > span.tags"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pterclub.com": {
+        {
             "id": "maozhan",
             "name": "\u732b\u7ad9",
             "domain": "https://pterclub.com/",
@@ -8857,21 +8425,9 @@
                         "desc": "\u7eaa\u5f55\u7247 (Documentary)"
                     }
                 ]
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "(//td[@align='left' and @class='rowfollow' and @valign='top']/b[1])[3]"
-                ]
             }
         },
-        "www.tjupt.org": {
+        {
             "id": "beibingyang",
             "name": "\u5317\u6d0b\u56ed",
             "domain": "https://www.tjupt.org/",
@@ -9038,23 +8594,9 @@
                         "text": 0.8
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//font[@class='twoup'][text()='2X']"
-                ],
-                "HR": [
-                    "//font[@color='red'][text()='Hit&Run']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.ptlsp.com": {
+        {
             "id": "PTLSP",
             "name": "PTLSP",
             "domain": "https://www.ptlsp.com/",
@@ -9234,23 +8776,9 @@
                     }
                 }
             },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
-            },
             "system_type": "nexus_php"
         },
-        "zhuque.in": {
+        {
             "id": "zhuque",
             "name": "\u6731\u96c0",
             "domain": "https://zhuque.in/",
@@ -9268,22 +8796,9 @@
                         }
                     }
                 ]
-            },
-            "conf": {
-                "RENDER": true,
-                "FREE": [
-                    "//span[@class='text-download'][contains(text(),'0x')]"
-                ],
-                "2XFREE": [
-                    ""
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@class='ant-form-item-control-input-content']/span[contains(text(),'\u6b63\u5728\u505a\u79cd: )]"
-                ]
             }
         },
-        "ihdbits.me": {
+        {
             "id": "iHDBits",
             "name": "iHDBits",
             "domain": "https://ihdbits.me/",
@@ -9462,19 +8977,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "ubits.club": {
+        {
             "id": "Ubits",
             "name": "Ubits",
             "domain": "https://ubits.club/",
@@ -9653,21 +9158,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "discfan.net": {
+        {
             "id": "discfan",
             "name": "\u8776\u7c89",
             "domain": "https://discfan.net/",
@@ -9890,19 +9383,9 @@
                     }
                 }
             },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
-            },
             "system_type": ""
         },
-        "hdmayi.com": {
+        {
             "id": "xiaomaoyi",
             "name": "\u5c0f\u8682\u8681",
             "domain": "https://hdmayi.com/",
@@ -10107,21 +9590,9 @@
                         "text": 90000
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "rousi.zip": {
+        {
             "id": "rousi",
             "name": "\u8089\u4e1d",
             "domain": "https://rousi.zip/",
@@ -10369,19 +9840,9 @@
                     }
                 }
             },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
-            },
             "system_type": ""
         },
-        "www.hddolby.com": {
+        {
             "id": "gaoqingdubi",
             "name": "\u9ad8\u6e05\u675c\u6bd4",
             "domain": "https://www.hddolby.com/",
@@ -10587,23 +10048,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "u2.dmhy.org": {
+        {
             "id": "U2",
             "name": "U2",
             "domain": "https://u2.dmhy.org/",
@@ -10876,19 +10323,9 @@
                         "desc": "\u52a0\u6d41\u91cd\u704c (Modded Blu-rays)"
                     }
                 ]
-            },
-            "conf": {
-                "FREE": [
-                    "//td[@class='rowfollow']/img[@class='pro_free'][@alt='FREE']"
-                ],
-                "2XFREE": [
-                    "//td[@class='rowfollow']/img[@class='pro_free2up'][@alt='2X Free']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "www.skyey2.com": {
+        {
             "id": "skyey2",
             "name": "\u5929\u96ea(skyey2)",
             "domain": "https://www.skyey2.com/",
@@ -10972,17 +10409,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//div[@class='pi']/b[contains(text(),'FREE')]"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "pt.btschool.club": {
+        {
             "id": "xuexiao",
             "name": "\u5b66\u6821",
             "domain": "https://pt.btschool.club/",
@@ -11183,21 +10612,9 @@
                         "text": 75600
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.haidan.video": {
+        {
             "id": "haidan",
             "name": "\u6d77\u80c6\u4e4b\u5bb6",
             "domain": "https://www.haidan.video/",
@@ -11403,17 +10820,9 @@
                         "desc": "\u52a8\u6f2b"
                     }
                 ]
-            },
-            "conf": {
-                "FREE": [
-                    "//div[@class='torrent']/div/div/div/div/div[@class='torrent_name_wrap']/div/div[@class='sp']/img[@class='pro_free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "open.cd": {
+        {
             "id": "queen",
             "name": "\u7687\u540e",
             "domain": "https://open.cd/",
@@ -11555,19 +10964,9 @@
                     }
                 }
             },
-            "category": {},
-            "conf": {
-                "FREE": [
-                    "//div[@class='title']/img[@class='pro_free']"
-                ],
-                "2XFREE": [
-                    "//div[@class='title']/img[@class='pro_free2up']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
-            }
+            "category": {}
         },
-        "nanyangpt.com": {
+        {
             "id": "nanyang",
             "name": "\u5357\u6d0b",
             "domain": "https://nanyangpt.com/",
@@ -11730,17 +11129,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "pt.eastgame.org": {
+        {
             "id": "tulufan",
             "name": "\u5410\u9c81\u756a",
             "domain": "https://pt.eastgame.org/",
@@ -11903,21 +11294,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.dragonhd.xyz": {
+        {
             "id": "longzhijia",
             "name": "\u9f99\u4e4b\u5bb6",
             "domain": "https://www.dragonhd.xyz/",
@@ -12082,7 +11461,7 @@
                 }
             }
         },
-        "hdtime.org": {
+        {
             "id": "gaoqingshijian",
             "name": "\u9ad8\u6e05\u65f6\u95f4",
             "domain": "https://hdtime.org/",
@@ -12282,21 +11661,9 @@
                         "selector": "td:nth-child(2) > table > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "hdhome.org": {
+        {
             "id": "jiayuan",
             "name": "\u5bb6\u56ed",
             "domain": "https://hdhome.org/",
@@ -12685,21 +12052,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span.tags"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pandapt.net": {
+        {
             "id": "pandapt",
             "name": "\u718a\u732b",
             "domain": "https://pandapt.net/",
@@ -12921,23 +12276,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "sharkpt.net": {
+        {
             "id": "sharkpt",
             "name": "\u9ca8\u9c7c",
             "domain": "https://sharkpt.net/",
@@ -13107,7 +12448,7 @@
             },
             "system_type": ""
         },
-        "hdsky.me": {
+        {
             "id": "gaoqingtiankong",
             "name": "\u9ad8\u6e05\u5929\u7a7a",
             "domain": "https://hdsky.me/",
@@ -13331,19 +12672,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "shadowflow.org": {
+        {
             "id": "ying",
             "name": "\u5f71",
             "domain": "https://shadowflow.org/",
@@ -13522,23 +12853,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span[title=\"\"]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.joyhd.net": {
+        {
             "id": "JoyHD",
             "name": "JoyHD",
             "domain": "https://www.joyhd.net/",
@@ -13734,7 +13051,7 @@
                 }
             }
         },
-        "pt.keepfrds.com": {
+        {
             "id": "pengyou",
             "name": "\u670b\u53cb",
             "domain": "https://pt.keepfrds.com/",
@@ -13924,21 +13241,9 @@
                         "remove": "a,b"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pthome.net": {
+        {
             "id": "pthome",
             "name": "\u94c2\u91d1\u5bb6",
             "domain": "https://pthome.net/",
@@ -14105,23 +13410,9 @@
                         "selector": "table.torrentname > tr > td.embedded > span.tags"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "kp.m-team.info": {
+        {
             "id": "mteam-kpinfo",
             "name": "\u9992\u5934",
             "domain": "https://kp.m-team.info/",
@@ -14357,19 +13648,9 @@
                         "attribute": "alt"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "leaves.red": {
+        {
             "id": "hongye",
             "name": "\u7ea2\u53f6",
             "domain": "https://leaves.red/",
@@ -14548,21 +13829,9 @@
                         "contents": -1
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pt.hdupt.com": {
+        {
             "id": "haoduoyou",
             "name": "\u597d\u591a\u6cb9",
             "domain": "https://pt.hdupt.com/",
@@ -14725,19 +13994,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "acg.rip": {
+        {
             "id": "ACG.RIP",
             "name": "ACG.RIP",
             "domain": "https://acg.rip/",
@@ -14814,7 +14073,7 @@
                 }
             }
         },
-        "pt.msg.vg": {
+        {
             "id": "mashaji",
             "name": "\u9a6c\u6740\u9e21",
             "domain": "https://pt.msg.vg/",
@@ -15009,22 +14268,9 @@
                         "selector": "td:nth-child(2) > table > tr > td:nth-child(1) > span"
                     }
                 }
-            },
-            "conf": {
-                "LOGIN": "user/login/index",
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "carpt.net": {
+        {
             "id": "car",
             "name": "\u8f66",
             "domain": "https://carpt.net/",
@@ -15192,23 +14438,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "ptvicomo.net": {
+        {
             "id": "ptvicomo",
             "name": "ptvicomo",
             "domain": "https://ptvicomo.net/",
@@ -15387,23 +14619,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span[title=\"\"]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "monikadesign.uk": {
+        {
             "id": "MonikaDesign",
             "name": "MonikaDesign",
             "domain": "https://monikadesign.uk/",
@@ -15490,19 +14708,9 @@
                         }
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//span[@class='badge-extra'][contains(@data-original-title,'Free')]"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//a[@class='badge-extra text-green'][contains(@data-original-title,'\u505a\u79cd')]"
-                ]
             }
         },
-        "iptorrents.com": {
+        {
             "id": "IPT",
             "name": "IPT",
             "domain": "https://iptorrents.com/",
@@ -15626,7 +14834,7 @@
                 }
             }
         },
-        "xp.m-team.io": {
+        {
             "id": "mteam-xpio",
             "name": "\u9992\u5934(XPIO)",
             "domain": "https://xp.m-team.io/",
@@ -15862,19 +15070,9 @@
                         "attribute": "alt"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "hdvbits.com": {
+        {
             "id": "hdvbits",
             "name": "hdvbits",
             "domain": "https://hdvbits.com/",
@@ -16079,21 +15277,9 @@
                         "text": 90000
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "zmpt.cc": {
+        {
             "id": "zhimeng",
             "name": "\u7ec7\u68a6",
             "domain": "https://zmpt.cc/",
@@ -16292,21 +15478,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(1) > span[title=\"\"]"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.nicept.net": {
+        {
             "id": "NICE",
             "name": "NICE",
             "domain": "https://www.nicept.net/",
@@ -16472,19 +15646,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "hdpt.xyz": {
+        {
             "id": "mingjiao",
             "name": "\u660e\u6559",
             "domain": "https://hdpt.xyz/",
@@ -16632,21 +15796,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "et8.org": {
+        {
             "id": "TCCF",
             "name": "\u4ed6\u5439\u5439\u98ce",
             "domain": "https://et8.org/",
@@ -16809,19 +15961,9 @@
                         "selector": "td:nth-child(2) > table > tr > td.embedded > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": []
             }
         },
-        "sukebei.nyaa.si": {
+        {
             "id": "NYAA(SUKEBEI)",
             "name": "NYAA(SUKEBEI)",
             "domain": "https://sukebei.nyaa.si/",
@@ -16897,7 +16039,7 @@
                 }
             }
         },
-        "eztv.re": {
+        {
             "id": "EZTV",
             "name": "EZTV",
             "domain": "https://eztv.re/",
@@ -16969,7 +16111,7 @@
                 }
             }
         },
-        "nyaa.ink": {
+        {
             "id": "NYAA(INK)",
             "name": "NYAA(INK)",
             "domain": "https://nyaa.ink/",
@@ -17045,7 +16187,7 @@
                 }
             }
         },
-        "www.oshen.win": {
+        {
             "id": "aoshen",
             "name": "\u5965\u7533",
             "domain": "https://www.oshen.win/",
@@ -17224,21 +16366,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "pt.2xfree.org": {
+        {
             "id": "2xfree",
             "name": "2xFree",
             "domain": "https://pt.2xfree.org/",
@@ -17434,21 +16564,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "springsunday.net": {
+        {
             "id": "chuntian",
             "name": "\u6625\u5929",
             "domain": "https://springsunday.net/",
@@ -17632,23 +16750,9 @@
                         "selector": "table.torrentname > tr > td > div.torrent-smalldescr > a > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "1ptba.com": {
+        {
             "id": "yi",
             "name": "\u58f9",
             "domain": "https://1ptba.com/",
@@ -17827,21 +16931,9 @@
                         "contents": -1
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "ourbits.club": {
+        {
             "id": "wobao",
             "name": "\u6211\u5821",
             "domain": "https://ourbits.club/",
@@ -18030,23 +17122,9 @@
                         "selector": "table.torrentname > tr > td.embedded > div > a > div.tag"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "byr.pt": {
+        {
             "id": "beiyouren",
             "name": "\u5317\u90ae\u4eba",
             "domain": "https://byr.pt/",
@@ -18214,23 +17292,9 @@
                         "selector": "td.embedded > span.tags"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "www.hdkyl.in": {
+        {
             "id": "hdkyl",
             "name": "hdkyl",
             "domain": "https://www.hdkyl.in/",
@@ -18410,23 +17474,9 @@
                     }
                 }
             },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
-            },
             "system_type": "nexus_php"
         },
-        "cyanbug.net": {
+        {
             "id": "daqingchong",
             "name": "\u5927\u9752\u866b",
             "domain": "https://cyanbug.net/",
@@ -18610,19 +17660,9 @@
                         "selector": "td:nth-child(2) > table.torrentname > tr > td:nth-child(2) > span"
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [],
-                "HR": [],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
         },
-        "fangwen2.icc2022.top": {
+        {
             "id": "bingqilin-fangwen2",
             "name": "\u51b0\u6dc7\u6dcb(fangwen2)",
             "domain": "https://fangwen2.icc2022.top/",
@@ -18827,21 +17867,983 @@
                         "text": 90000
                     }
                 }
-            },
-            "conf": {
-                "FREE": [
-                    "//h1[@id='top']/b/font[@class='free']"
-                ],
-                "2XFREE": [
-                    "//h1[@id='top']/b/font[@class='twoupfree']"
-                ],
-                "HR": [
-                    "//h1[@id='top']/img[@class='hitandrun']"
-                ],
-                "PEER_COUNT": [
-                    "//div[@id='peercount']/b[1]"
-                ]
             }
+        }
+    ],
+    "conf": {
+        "piggo.me": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='pro_free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='pro_free2up']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pt.soulvoice.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [
+                "//img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "sz.chddiy.xyz": {
+            "FREE": [
+                "//h1[@id='top']/img[@class='pro_free']"
+            ],
+            "2XFREE": [],
+            "HR": [
+                "//b[contains(text(),'H&R:')]"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "52pt.site": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "exoticaz.to": {
+            "FREE": [
+                "//i[contains(@class, 'fa-star')]"
+            ],
+            "2XFREE": [
+                "//i[contains(@class, 'fa-star-half')]"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "dajiao.cyou": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "kufei.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.okpt.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "xp.m-team.cc": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdvideo.one": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ptchdbits.co": {
+            "FREE": [
+                "//h1[@id='top']/img[@class='pro_free']"
+            ],
+            "2XFREE": [],
+            "HR": [
+                "//b[contains(text(),'H&R:')]"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.icc2022.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdfun.me": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ptchina.org": {
+            "FREE": [
+                "//h1[@id='top']/b/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "kp.m-team.cc": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "xingtan.one": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "skyeysnow.com": {
+            "FREE": [
+                "//div[@class='pi']/b[contains(text(),'FREE')]"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "www.beitai.pt": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "jptv.club": {
+            "FREE": [
+                "//span/i[@class='fas fa-star text-gold']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//span[@class='badge-extra text-green']"
+            ]
+        },
+        "azusa.wiki": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "pt.0ff.cc": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ptcafe.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdchina.org": {
+            "RENDER": true,
+            "FREE": [
+                "//h2[@id='top']/img[@class='pro_free']"
+            ],
+            "2XFREE": [
+                "//h2[@id='top']/img[@class='pro_free2up']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ptsbao.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "fsm.name": {
+            "FREE": [
+                "//span[@class='badge bg-primary']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "hdfans.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pt.sjtu.edu.cn": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "star-space.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hhanclub.top": {
+            "FREE": [
+                "//span[@class='promotion-tag promotion-tag-free']"
+            ],
+            "2XFREE": [
+                "//span[@class='promotion-tag promotion-tag-2xfree']"
+            ],
+            "HR": [
+                "//span[contains(text(), 'H&R')]"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='seeder-count']"
+            ]
+        },
+        "hdatmos.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "totheglory.im": {
+            "FREE": [
+                "//img[@class='topic'][contains(@src,'ico_free.gif')]"
+            ],
+            "2XFREE": [],
+            "HR": [
+                "//img[@src='/pic/hit_run.gif']"
+            ],
+            "PEER_COUNT": [
+                "//span[@id='dlstatus']"
+            ]
+        },
+        "wintersakura.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "club.hares.top": {
+            "FREE": [
+                "//b[@class='free'][text()='\u514d\u8d39']"
+            ],
+            "2XFREE": [
+                "//b[@class='twoupfree'][text()='2X\u514d\u8d39']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "hdarea.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.pttime.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']",
+                "//h1[@id='top']/b/font[@class='zeroupzerodown']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.htpt.cc": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "audiences.me": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pterclub.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "(//td[@align='left' and @class='rowfollow' and @valign='top']/b[1])[3]"
+            ]
+        },
+        "www.tjupt.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//font[@class='twoup'][text()='2X']"
+            ],
+            "HR": [
+                "//font[@color='red'][text()='Hit&Run']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.ptlsp.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "zhuque.in": {
+            "RENDER": true,
+            "FREE": [
+                "//span[@class='text-download'][contains(text(),'0x')]"
+            ],
+            "2XFREE": [
+                ""
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@class='ant-form-item-control-input-content']/span[contains(text(),'\u6b63\u5728\u505a\u79cd: )]"
+            ]
+        },
+        "ihdbits.me": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "ubits.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "discfan.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdmayi.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "rousi.zip": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.hddolby.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "u2.dmhy.org": {
+            "FREE": [
+                "//td[@class='rowfollow']/img[@class='pro_free'][@alt='FREE']"
+            ],
+            "2XFREE": [
+                "//td[@class='rowfollow']/img[@class='pro_free2up'][@alt='2X Free']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "www.skyey2.com": {
+            "FREE": [
+                "//div[@class='pi']/b[contains(text(),'FREE')]"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "pt.btschool.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.haidan.video": {
+            "FREE": [
+                "//div[@class='torrent']/div/div/div/div/div[@class='torrent_name_wrap']/div/div[@class='sp']/img[@class='pro_free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "open.cd": {
+            "FREE": [
+                "//div[@class='title']/img[@class='pro_free']"
+            ],
+            "2XFREE": [
+                "//div[@class='title']/img[@class='pro_free2up']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "nanyangpt.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "pt.eastgame.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdtime.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdhome.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pandapt.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdsky.me": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "shadowflow.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pt.keepfrds.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pthome.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "kp.m-team.info": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "leaves.red": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pt.hdupt.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "pt.msg.vg": {
+            "LOGIN": "user/login/index",
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "carpt.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ptvicomo.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "monikadesign.uk": {
+            "FREE": [
+                "//span[@class='badge-extra'][contains(@data-original-title,'Free')]"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//a[@class='badge-extra text-green'][contains(@data-original-title,'\u505a\u79cd')]"
+            ]
+        },
+        "xp.m-team.io": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "hdvbits.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "zmpt.cc": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.nicept.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "hdpt.xyz": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "et8.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": []
+        },
+        "www.oshen.win": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "pt.2xfree.org": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "springsunday.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "1ptba.com": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "ourbits.club": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "byr.pt": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "www.hdkyl.in": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "cyanbug.net": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [],
+            "HR": [],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
+        },
+        "fangwen2.icc2022.top": {
+            "FREE": [
+                "//h1[@id='top']/b/font[@class='free']"
+            ],
+            "2XFREE": [
+                "//h1[@id='top']/b/font[@class='twoupfree']"
+            ],
+            "HR": [
+                "//h1[@id='top']/img[@class='hitandrun']"
+            ],
+            "PEER_COUNT": [
+                "//div[@id='peercount']/b[1]"
+            ]
         }
     }
 }
